@@ -84,10 +84,12 @@ página autenticada de ese reto.
 |---:|---|---|---|---|
 | 1 | Cryptography | Letters Never Sent | **Resuelto y validado** | [write-up](01-cryptography/01-letters-never-sent/README.md) · [solve.py](01-cryptography/01-letters-never-sent/solve.py) |
 | 2 | Cryptography | The Apparatus, Rapport | **Resuelto y validado** | [write-up](01-cryptography/02-the-apparatus-rapport/README.md) · [solve.py](01-cryptography/02-the-apparatus-rapport/solve.py) |
+| 3 | Cryptography | The Consulting Room | **Resuelto y validado** | [write-up](01-cryptography/03-the-consulting-room/README.md) · [solve.py](01-cryptography/03-the-consulting-room/solve.py) |
 
-Progreso actual: **2/34 retos resueltos**. La plataforma mostró `CHALLENGE
-SOLVED` para `Letters Never Sent`, desbloqueó el logro `Warm Up` y aceptó
-`The Apparatus, Rapport` con el mensaje `Correct. Contact is established.`
+Progreso actual: **3/34 retos resueltos**. La plataforma mostró `CHALLENGE
+SOLVED` para `Letters Never Sent`, desbloqueó el logro `Warm Up`, aceptó
+`The Apparatus, Rapport` con el mensaje `Correct. Contact is established.` y
+aceptó `The Consulting Room` con `Correct.`.
 
 ## Premios publicados
 
