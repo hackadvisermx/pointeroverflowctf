@@ -93,8 +93,9 @@ página autenticada de ese reto.
 | 9 | Forensics | Everything Left Open | **Resuelto y validado** | [write-up](03-forensics/01-everything-left-open/README.md) · [solve.py](03-forensics/01-everything-left-open/solve.py) |
 | 10 | Forensics | A Cabin Worth | **Resuelto y validado** | [write-up](03-forensics/02-a-cabin-worth/README.md) · [solve.py](03-forensics/02-a-cabin-worth/solve.py) |
 | 11 | Forensics | What Goes Unwritten | **Resuelto y validado** | [write-up](03-forensics/03-what-goes-unwritten/README.md) · [solve.py](03-forensics/03-what-goes-unwritten/solve.py) |
+| 12 | Forensics | A Quiet Home | **Resuelto y validado** | [write-up](03-forensics/04-a-quiet-home/README.md) · [solve.py](03-forensics/04-a-quiet-home/solve.py) |
 
-Progreso actual: **11/34 retos resueltos**. La plataforma mostró `CHALLENGE
+Progreso actual: **12/34 retos resueltos**. La plataforma mostró `CHALLENGE
 SOLVED` para `Letters Never Sent`, desbloqueó el logro `Warm Up`, aceptó
 `The Apparatus, Rapport` con el mensaje `Correct. Contact is established.` y
 aceptó `The Consulting Room` con `Correct.` y `A Map of Small Things` con el
@@ -108,6 +109,8 @@ allowlist de lectura y el acceso al valor. `Everything Left Open` respondió
 Worth` confirmó `ACK :: Correct.` después de recuperar la fila eliminada del
 WAL de SQLite y descifrar su nota de Joplin. `What Goes Unwritten` confirmó
 `ACK :: Correct.` con el token base32 recuperado del minidump.
+`A Quiet Home` confirmó `ACK :: Correct.` tras identificar el serial del
+dispositivo ajeno en el tráfico MQTT.
 
 ## Premios publicados
 
@@ -136,7 +139,8 @@ pointeroverflowctf/
 └── 03-forensics/
     ├── 01-everything-left-open/
     ├── 02-a-cabin-worth/
-    └── 03-what-goes-unwritten/
+    ├── 03-what-goes-unwritten/
+    └── 04-a-quiet-home/
         ├── README.md
         └── solve.py
 ```
