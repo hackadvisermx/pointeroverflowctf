@@ -113,11 +113,11 @@ página autenticada de ese reto.
 | 29 | Web | The Shape of a Query | **Resuelto y validado** | [write-up](09-web/01-shape-of-query/README.md) · [solve.py](09-web/01-shape-of-query/solve.py) |
 | 30 | Web | Poisoned Well | **Resuelto y validado** | [write-up](09-web/02-poisoned-well/README.md) · [solve.py](09-web/02-poisoned-well/solve.py) |
 | 31 | Web | The Logic Inside | **Resuelto y validado** | [write-up](09-web/04-the-logic-inside/README.md) · [solve.py](09-web/04-the-logic-inside/solve.py) |
-| 32 | Reverse Engineering | Excavation | **En análisis** | [notas](07-reverse-engineering/03-excavation/README.md) |
-| 33 | Steganography | Invisible Ink | **En análisis** | pendiente de recuperar la clave de la capa Snow |
-| 34 | Web | No Structure Required | **Pendiente** | — |
+| 32 | Reverse Engineering | Excavation | **Resuelto y validado** | [write-up](07-reverse-engineering/03-excavation/README.md) |
+| 33 | Steganography | Invisible Ink | **Resuelto y validado** | [write-up](08-steganography/01-invisible-ink/README.md) · [solve.py](08-steganography/01-invisible-ink/solve.py) |
+| 34 | Web | No Structure Required | **Resuelto y validado** | [write-up](09-web/03-no-structure-required/README.md) |
 
-Progreso actual: **31/34 retos resueltos**. La plataforma mostró `CHALLENGE
+Progreso actual: **34/34 retos resueltos**. La plataforma mostró `CHALLENGE
 SOLVED` para `Letters Never Sent`, desbloqueó el logro `Warm Up`, aceptó
 `The Apparatus, Rapport` con el mensaje `Correct. Contact is established.` y
 aceptó `The Consulting Room` con `Correct.` y `A Map of Small Things` con el
@@ -166,7 +166,12 @@ decodificar la temporización Morse de los golpes.
 miembro administrador mediante GraphQL. `Poisoned Well` respondió `Correct.`
 al verificar la caché con la sesión del equipo. `The Logic Inside` aceptó
 `f3ae7967e6c6624c` usando la representación decimal de loopback y el oráculo
-de códigos HTTP.
+de códigos HTTP. `Excavation` aceptó `CNMWEJ37B6ZYULKL` después de descifrar
+los saves y leer las iniciales de los 16 items del equipo. `Invisible Ink`
+aceptó `POCTF{WPFHZJFKNCCRYYDK}` al extraer ASCII de 7 bits del whitespace
+final de las líneas impares. `No Structure Required` respondió `Auditor's
+signature verified.` tras usar la inyección NoSQL del login y consultar la
+colección oculta `secrets`.
 
 ## Premios publicados
 
@@ -216,12 +221,14 @@ pointeroverflowctf/
     ├── 03-excavation/
     └── 04-an-invented-language/
 └── 08-steganography/
+    ├── 01-invisible-ink/
     ├── 02-commit-to-memory/
     ├── 03-the-apparatus-the-rapping/
     └── 04-velocity/
 └── 09-web/
     ├── 01-shape-of-query/
     ├── 02-poisoned-well/
+    ├── 03-no-structure-required/
     └── 04-the-logic-inside/
 ```
 
