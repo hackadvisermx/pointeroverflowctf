@@ -99,8 +99,9 @@ página autenticada de ese reto.
 | 15 | Miscellaneous | The Apparatus, Invocation | **Resuelto y validado** | [write-up](04-game-hacking/03-the-apparatus-invocation/README.md) · [solve.py](04-game-hacking/03-the-apparatus-invocation/solve.py) |
 | 16 | Miscellaneous | Frequency and Consequence | **Resuelto y validado** | [write-up](05-miscellaneous/01-frequency-and-consequence/README.md) · [solve.py](05-miscellaneous/01-frequency-and-consequence/solve.py) |
 | 17 | Miscellaneous | Columns of Holes | **Resuelto y validado** | [write-up](05-miscellaneous/02-columns-of-holes/README.md) · [solve.py](05-miscellaneous/02-columns-of-holes/solve.py) |
+| 18 | Miscellaneous | A Peculiar Game | **Resuelto y validado** | [write-up](05-miscellaneous/03-a-peculiar-game/README.md) · [solve.py](05-miscellaneous/03-a-peculiar-game/solve.py) |
 
-Progreso actual: **17/34 retos resueltos**. La plataforma mostró `CHALLENGE
+Progreso actual: **18/34 retos resueltos**. La plataforma mostró `CHALLENGE
 SOLVED` para `Letters Never Sent`, desbloqueó el logro `Warm Up`, aceptó
 `The Apparatus, Rapport` con el mensaje `Correct. Contact is established.` y
 aceptó `The Consulting Room` con `Correct.` y `A Map of Small Things` con el
@@ -124,6 +125,8 @@ resolver la cuadrícula Lights Out específica del equipo.
 `Frequency and Consequence` aceptó el nonce `M6N2OZJ2AGH26YWQ` con `Correct. 73.`.
 `Columns of Holes` aceptó el nonce `101F31EB65350D9A` con `Correct.` tras
 decodificar las punchcards Hollerith del memo PDF.
+`A Peculiar Game` aceptó el nonce `D618BBB084981B76` con `The game concludes.`
+tras leer las casillas de destino como una rejilla de dos filas.
 
 ## Premios publicados
 
@@ -167,6 +170,9 @@ pointeroverflowctf/
         ├── README.md
         └── solve.py
     └── 02-columns-of-holes/
+        ├── README.md
+        └── solve.py
+    └── 03-a-peculiar-game/
         ├── README.md
         └── solve.py
 ```
