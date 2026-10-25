@@ -87,13 +87,15 @@ página autenticada de ese reto.
 | 3 | Cryptography | The Consulting Room | **Resuelto y validado** | [write-up](01-cryptography/03-the-consulting-room/README.md) · [solve.py](01-cryptography/03-the-consulting-room/solve.py) |
 | 4 | Cryptography | A Map of Small Things | **Resuelto y validado** | [write-up](01-cryptography/04-a-map-of-small-things/README.md) · [solve.py](01-cryptography/04-a-map-of-small-things/solve.py) |
 | 5 | Exploitation | The Sandglass | **Resuelto y validado** | [write-up](02-exploitation/01-the-sandglass/README.md) · [solve.lua](02-exploitation/01-the-sandglass/solve.lua) |
+| 6 | Exploitation | Read Me My Fortune | **Resuelto y validado** | [write-up](02-exploitation/02-read-me-my-fortune/README.md) · [solve.py](02-exploitation/02-read-me-my-fortune/solve.py) |
 
-Progreso actual: **5/34 retos resueltos**. La plataforma mostró `CHALLENGE
+Progreso actual: **6/34 retos resueltos**. La plataforma mostró `CHALLENGE
 SOLVED` para `Letters Never Sent`, desbloqueó el logro `Warm Up`, aceptó
 `The Apparatus, Rapport` con el mensaje `Correct. Contact is established.` y
 aceptó `The Consulting Room` con `Correct.` y `A Map of Small Things` con el
 marcador canónico generado por la página objetivo. `The Sandglass` aparece
-como `Solved` y el formulario confirma `Already solved.`.
+como `Solved` y el formulario confirma `Already solved.`. `Read Me My
+Fortune` respondió `Correct.`.
 
 ## Premios publicados
 
