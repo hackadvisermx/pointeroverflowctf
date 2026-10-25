@@ -110,14 +110,14 @@ página autenticada de ese reto.
 | 26 | Steganography | Velocity | **Resuelto y validado** | [write-up](08-steganography/04-velocity/README.md) · [solve.py](08-steganography/04-velocity/solve.py) |
 | 27 | Steganography | Commit to Memory | **Resuelto y validado** | [write-up](08-steganography/02-commit-to-memory/README.md) · [solve.py](08-steganography/02-commit-to-memory/solve.py) |
 | 28 | Steganography | The Apparatus, The Rapping | **Resuelto y validado** | [write-up](08-steganography/03-the-apparatus-the-rapping/README.md) · [solve.py](08-steganography/03-the-apparatus-the-rapping/solve.py) |
-| 29 | Reverse Engineering | Excavation | **En análisis** | [notas](07-reverse-engineering/03-excavation/README.md) |
-| 30 | Steganography | Invisible Ink | **En análisis** | pendiente de recuperar la clave de la capa Snow |
-| 31 | Web | The Shape of a Query | **Pendiente** | — |
-| 32 | Web | Poisoned Well | **Pendiente** | — |
-| 33 | Web | No Structure Required | **Pendiente** | — |
-| 34 | Web | The Logic Inside | **Pendiente** | — |
+| 29 | Web | The Shape of a Query | **Resuelto y validado** | [write-up](09-web/01-shape-of-query/README.md) · [solve.py](09-web/01-shape-of-query/solve.py) |
+| 30 | Web | Poisoned Well | **Resuelto y validado** | [write-up](09-web/02-poisoned-well/README.md) · [solve.py](09-web/02-poisoned-well/solve.py) |
+| 31 | Web | The Logic Inside | **Resuelto y validado** | [write-up](09-web/04-the-logic-inside/README.md) · [solve.py](09-web/04-the-logic-inside/solve.py) |
+| 32 | Reverse Engineering | Excavation | **En análisis** | [notas](07-reverse-engineering/03-excavation/README.md) |
+| 33 | Steganography | Invisible Ink | **En análisis** | pendiente de recuperar la clave de la capa Snow |
+| 34 | Web | No Structure Required | **Pendiente** | — |
 
-Progreso actual: **28/34 retos resueltos**. La plataforma mostró `CHALLENGE
+Progreso actual: **31/34 retos resueltos**. La plataforma mostró `CHALLENGE
 SOLVED` para `Letters Never Sent`, desbloqueó el logro `Warm Up`, aceptó
 `The Apparatus, Rapport` con el mensaje `Correct. Contact is established.` y
 aceptó `The Consulting Room` con `Correct.` y `A Map of Small Things` con el
@@ -162,6 +162,11 @@ bits.
 diferencias de timestamp de los commits a bytes ASCII. `The Apparatus, The
 Rapping` aceptó `AAED9D899DD8B64E` con `The signal resolves.` después de
 decodificar la temporización Morse de los golpes.
+`The Shape of a Query` respondió `Correct.` al consultar la nota privada del
+miembro administrador mediante GraphQL. `Poisoned Well` respondió `Correct.`
+al verificar la caché con la sesión del equipo. `The Logic Inside` aceptó
+`f3ae7967e6c6624c` usando la representación decimal de loopback y el oráculo
+de códigos HTTP.
 
 ## Premios publicados
 
@@ -214,6 +219,10 @@ pointeroverflowctf/
     ├── 02-commit-to-memory/
     ├── 03-the-apparatus-the-rapping/
     └── 04-velocity/
+└── 09-web/
+    ├── 01-shape-of-query/
+    ├── 02-poisoned-well/
+    └── 04-the-logic-inside/
 ```
 
 Última revisión de la información visible del sitio: **24 de octubre de
