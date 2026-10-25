@@ -81,8 +81,9 @@ anunciada, no como una garantía de que el servidor lo conservará.
 
 ## Retos publicados en el tablero
 
-La API autenticada lista actualmente **43 retos**. De ellos, 37 están
-accesibles y ya fueron resueltos; los 6 restantes están bloqueados y no tienen
+La API autenticada lista actualmente **43 retos**. De ellos, 38 están
+accesibles y ya fueron resueltos por sus targets; los 5 restantes están
+bloqueados y no tienen
 fecha de publicación ni URL de instancia.
 
 Los 37 retos accesibles del tablero se organizan en estas categorías:
@@ -91,7 +92,7 @@ Los 37 retos accesibles del tablero se organizan en estas categorías:
 |---|---|
 | Cryptography | Letters Never Sent · The Apparatus, Rapport · The Consulting Room · A Map of Small Things · Forty Measures Deep |
 | Exploitation | The Sandglass · Read Me My Fortune · Thirty-Two Steps Down · A Few Seconds Either Way |
-| Forensics | Everything Left Open · A Cabin Worth · What Goes Unwritten · A Quiet Home |
+| Forensics | Everything Left Open · A Cabin Worth · What Goes Unwritten · A Quiet Home · Archaeology of Mistakes |
 | Game Hacking | Leap of Faith · Health Is a Social Construct |
 | Miscellaneous | The Apparatus, Invocation · Frequency and Consequence · Columns of Holes · A Peculiar Game · Conditional Existence |
 | Open-Source Intelligence | A Borrowed Name · Strings Attached · Where the Light Fails to Fall · The Apparatus, Apport |
@@ -104,7 +105,6 @@ Los 37 retos accesibles del tablero se organizan en estas categorías:
 | ID | Categoría | Reto | Oleada | Estado |
 |---:|---|---|---:|---|
 | 131 | Exploitation | What the Heap Remembers | 5 | Bloqueado |
-| 112 | Forensics | Archaeology of Mistakes | 5 | Bloqueado |
 | 49 | Game Hacking | The House Always Misses | 5 | Bloqueado |
 | 94 | Open-Source Intelligence | The Preserved Moment | 5 | Bloqueado |
 | 121 | Reverse Engineering | The Oracle's Weight | 5 | Bloqueado |
@@ -155,8 +155,9 @@ la página autenticada de cada reto.
 | 35 | Web | The Apparatus, Levitation | **Resuelto y validado** | [write-up](09-web/05-the-apparatus-levitation/README.md) |
 | 36 | Miscellaneous | Conditional Existence | **Resuelto y validado** | [write-up](05-miscellaneous/05-conditional-existence/README.md) |
 | 37 | Cryptography | Forty Measures Deep | **Resuelto y validado** | [write-up](01-cryptography/05-forty-measures-deep/README.md) |
+| 38 | Forensics | Archaeology of Mistakes | **Resuelto y validado** | [write-up](03-forensics/05-archaeology-of-mistakes/README.md) |
 
-Progreso actual: **37/43 retos listados resueltos**; los 6 restantes están
+Progreso actual: **38/43 retos listados resueltos por target**; los 5 restantes están
 bloqueados. Este conteo queda sujeto a la limpieza de Wave 5 anunciada por la
 organización; la plataforma mostró `CHALLENGE
 SOLVED` para `Letters Never Sent`, desbloqueó el logro `Warm Up`, aceptó
@@ -221,6 +222,9 @@ endpoint oficial.
 `Forty Measures Deep` respondió `ok: true` y `solved: true` después de
 decodificar las alturas MIDI con el texto conocido `POCTF` y recuperar la
 sustitución del alfabeto musical privado.
+`Archaeology of Mistakes` respondió `Correct.` en su target después de carvar
+los JPEGs de la imagen RAW y recuperar `Z52ZZAOOGSNSKWQ2` del `UserComment`
+EXIF; una consulta posterior confirmó `team_solved: true` antes del relock.
 
 ## Premios publicados
 
@@ -251,7 +255,8 @@ pointeroverflowctf/
 │   ├── 01-everything-left-open/
 │   ├── 02-a-cabin-worth/
 │   ├── 03-what-goes-unwritten/
-│   └── 04-a-quiet-home/
+│   ├── 04-a-quiet-home/
+│   └── 05-archaeology-of-mistakes/
 ├── 04-game-hacking/
 │   ├── 01-leap-of-faith/
 │   ├── 02-health-is-a-social-construct/
