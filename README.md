@@ -70,6 +70,15 @@ infraestructura; a las 09:07 anunció que Wave 5 estaría disponible a las
 el scraping repetitivo antes del release podía descalificar participantes.
 Esta comunicación del canal es la referencia operativa para el lanzamiento.
 
+A las **10:06 CDT**, después de que la infraestructura volviera a responder con
+timeouts y los solves globales aumentaran de forma anómala, el organizador
+anunció el cierre inmediato de Wave 5, el borrado de sus solves y el reemplazo
+de los retos. También indicó que la siguiente apertura será Wave 6, el domingo
+1 de noviembre de 2026 a las 09:00 central. La última consulta autenticada a la
+API todavía mostraba los tres solves propios de Wave 5, por lo que el conteo de
+progreso de esta revisión debe entenderse como un snapshot previo a la limpieza
+anunciada, no como una garantía de que el servidor lo conservará.
+
 ## Retos publicados en el tablero
 
 La API autenticada lista actualmente **43 retos**. De ellos, 37 están
@@ -148,7 +157,8 @@ la página autenticada de cada reto.
 | 37 | Cryptography | Forty Measures Deep | **Resuelto y validado** | [write-up](01-cryptography/05-forty-measures-deep/README.md) |
 
 Progreso actual: **37/43 retos listados resueltos**; los 6 restantes están
-bloqueados. La plataforma mostró `CHALLENGE
+bloqueados. Este conteo queda sujeto a la limpieza de Wave 5 anunciada por la
+organización; la plataforma mostró `CHALLENGE
 SOLVED` para `Letters Never Sent`, desbloqueó el logro `Warm Up`, aceptó
 `The Apparatus, Rapport` con el mensaje `Correct. Contact is established.` y
 aceptó `The Consulting Room` con `Correct.` y `A Map of Small Things` con el
