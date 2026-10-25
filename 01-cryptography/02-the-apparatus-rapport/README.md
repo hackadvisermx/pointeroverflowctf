@@ -4,7 +4,9 @@
 **Identificador visible:** `crypto2`  
 **Oleada:** 2  
 **Puntos mostrados:** 125  
-**Estado:** resuelto localmente; flag pendiente de validación.
+**Estado:** resuelto y validado en la plataforma.
+
+**Flag:** `POCTF{5.1522.4PJEZSEMFPTYF5SQ.BPATVYCIAFX2ZAGKYBZMEC7NHA}`
 
 ## Tablero y clave
 
@@ -50,8 +52,8 @@ El mismo procedimiento sobre el mensaje primario devuelve la flag:
 POCTF{5.1522.4PJEZSEMFPTYF5SQ.BPATVYCIAFX2ZAGKYBZMEC7NHA}
 ```
 
-La flag está preparada para envío, pero todavía no se ha validado en la
-plataforma.
+La flag se envió desde la cuenta `hackadvisermx` y la plataforma respondió
+`Correct. Contact is established.`
 
 ## Reproducción
 
