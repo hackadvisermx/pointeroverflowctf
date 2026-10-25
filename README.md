@@ -107,9 +107,17 @@ página autenticada de ese reto.
 | 23 | Reverse Engineering | Panoptican | **Resuelto y validado** | [write-up](07-reverse-engineering/01-panoptican/README.md) · [solve.py](07-reverse-engineering/01-panoptican/solve.py) |
 | 24 | Reverse Engineering | The Disassembled Mind | **Resuelto y validado** | [write-up](07-reverse-engineering/02-the-disassembled-mind/README.md) · [solve.py](07-reverse-engineering/02-the-disassembled-mind/solve.py) |
 | 25 | Reverse Engineering | An Invented Language | **Resuelto y validado** | [write-up](07-reverse-engineering/04-an-invented-language/README.md) · [solve.py](07-reverse-engineering/04-an-invented-language/solve.py) |
-| 26 | Reverse Engineering | Excavation | **En análisis** | [notas](07-reverse-engineering/03-excavation/README.md) |
+| 26 | Steganography | Velocity | **Resuelto y validado** | [write-up](08-steganography/04-velocity/README.md) · [solve.py](08-steganography/04-velocity/solve.py) |
+| 27 | Steganography | Commit to Memory | **Resuelto y validado** | [write-up](08-steganography/02-commit-to-memory/README.md) · [solve.py](08-steganography/02-commit-to-memory/solve.py) |
+| 28 | Steganography | The Apparatus, The Rapping | **Resuelto y validado** | [write-up](08-steganography/03-the-apparatus-the-rapping/README.md) · [solve.py](08-steganography/03-the-apparatus-the-rapping/solve.py) |
+| 29 | Reverse Engineering | Excavation | **En análisis** | [notas](07-reverse-engineering/03-excavation/README.md) |
+| 30 | Steganography | Invisible Ink | **En análisis** | pendiente de recuperar la clave de la capa Snow |
+| 31 | Web | The Shape of a Query | **Pendiente** | — |
+| 32 | Web | Poisoned Well | **Pendiente** | — |
+| 33 | Web | No Structure Required | **Pendiente** | — |
+| 34 | Web | The Logic Inside | **Pendiente** | — |
 
-Progreso actual: **25/34 retos resueltos**. La plataforma mostró `CHALLENGE
+Progreso actual: **28/34 retos resueltos**. La plataforma mostró `CHALLENGE
 SOLVED` para `Letters Never Sent`, desbloqueó el logro `Warm Up`, aceptó
 `The Apparatus, Rapport` con el mensaje `Correct. Contact is established.` y
 aceptó `The Consulting Room` con `Correct.` y `A Map of Small Things` con el
@@ -147,7 +155,13 @@ y respondió `Identified. The archive is closed.`.
 embebida y aplicar el XOR de autorización. `The Disassembled Mind` respondió
 `Correct.` al combinar sus tres constantes activas byte a byte. `An Invented
 Language` respondió `The interpreter concurs.` tras emular las operaciones
-PUSH/XOR/escritura de su VM.
+PUSH/XOR/escritura de su VM. `Velocity` aceptó `C268716976238AAD` con
+`The signal resolves.` después de decodificar las 64 velocidades MIDI como
+bits.
+`Commit to Memory` respondió `Correct. Committed.` al convertir las
+diferencias de timestamp de los commits a bytes ASCII. `The Apparatus, The
+Rapping` aceptó `AAED9D899DD8B64E` con `The signal resolves.` después de
+decodificar la temporización Morse de los golpes.
 
 ## Premios publicados
 
@@ -196,6 +210,10 @@ pointeroverflowctf/
     ├── 02-the-disassembled-mind/
     ├── 03-excavation/
     └── 04-an-invented-language/
+└── 08-steganography/
+    ├── 02-commit-to-memory/
+    ├── 03-the-apparatus-the-rapping/
+    └── 04-velocity/
 ```
 
 Última revisión de la información visible del sitio: **24 de octubre de
