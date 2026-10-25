@@ -4,7 +4,9 @@
 **Identificador visible:** `crypto1`  
 **Oleada:** 1  
 **Puntos mostrados al abrirlo:** 95  
-**Estado:** resuelto localmente; flag pendiente de validación en la plataforma.
+**Estado:** resuelto y validado en la plataforma.
+
+**Flag:** `POCTF{2.1522.M267EYEGRWNU4673.JU6WHAMRGKDWW3ZDGDWPF2DUDO}`
 
 ## Enunciado y artefactos
 
@@ -42,9 +44,9 @@ Ese es el indicio para la clave.
    POCTF{2.1522.M267EYEGRWNU4673.JU6WHAMRGKDWW3ZDGDWPF2DUDO}
    ```
 
-El prefijo `POCTF{` confirma la alineación de la clave. La flag todavía no se
-ha enviado desde el navegador en esta sesión; después del envío debe
-actualizarse este estado con la respuesta visible del sitio.
+El prefijo `POCTF{` confirma la alineación de la clave. La flag se envió desde
+la cuenta `hackadvisermx` y el sitio respondió `CHALLENGE SOLVED`; también
+desbloqueó el logro `Warm Up`.
 
 ## Reproducción
 

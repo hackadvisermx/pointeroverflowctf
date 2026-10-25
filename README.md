@@ -82,7 +82,10 @@ página autenticada de ese reto.
 
 | # | Categoría | Reto | Estado | Evidencia |
 |---:|---|---|---|---|
-| 1 | Cryptography | Letters Never Sent | **Resuelto localmente; pendiente de validar** | [write-up](01-cryptography/01-letters-never-sent/README.md) · [solve.py](01-cryptography/01-letters-never-sent/solve.py) |
+| 1 | Cryptography | Letters Never Sent | **Resuelto y validado** | [write-up](01-cryptography/01-letters-never-sent/README.md) · [solve.py](01-cryptography/01-letters-never-sent/solve.py) |
+
+Progreso actual: **1/34 retos resueltos**. La plataforma mostró `CHALLENGE
+SOLVED` y desbloqueó el logro `Warm Up` para `Letters Never Sent`.
 
 ## Premios publicados
 
