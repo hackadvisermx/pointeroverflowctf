@@ -90,8 +90,9 @@ página autenticada de ese reto.
 | 6 | Exploitation | Read Me My Fortune | **Resuelto y validado** | [write-up](02-exploitation/02-read-me-my-fortune/README.md) · [solve.py](02-exploitation/02-read-me-my-fortune/solve.py) |
 | 7 | Exploitation | Thirty-Two Steps Down | **Resuelto y validado** | [write-up](02-exploitation/03-thirty-two-steps-down/README.md) · [solve.py](02-exploitation/03-thirty-two-steps-down/solve.py) |
 | 8 | Exploitation | A Few Seconds Either Way | **Resuelto y validado** | [write-up](02-exploitation/04-a-few-seconds-either-way/README.md) · [solve.py](02-exploitation/04-a-few-seconds-either-way/solve.py) |
+| 9 | Forensics | Everything Left Open | **Resuelto y validado** | [write-up](03-forensics/01-everything-left-open/README.md) · [solve.py](03-forensics/01-everything-left-open/solve.py) |
 
-Progreso actual: **8/34 retos resueltos**. La plataforma mostró `CHALLENGE
+Progreso actual: **9/34 retos resueltos**. La plataforma mostró `CHALLENGE
 SOLVED` para `Letters Never Sent`, desbloqueó el logro `Warm Up`, aceptó
 `The Apparatus, Rapport` con el mensaje `Correct. Contact is established.` y
 aceptó `The Consulting Room` con `Correct.` y `A Map of Small Things` con el
@@ -100,7 +101,8 @@ como `Solved` y el formulario confirma `Already solved.`. `Read Me My
 Fortune` respondió `Correct.`. `Thirty-Two Steps Down` respondió `Correct.`
 tras alcanzar el nivel 32 del VM y ejecutar `READ_HOST_FLAG`. `A Few Seconds
 Either Way` confirmó `Race won.` después de ganar la carrera entre el
-allowlist de lectura y el acceso al valor.
+allowlist de lectura y el acceso al valor. `Everything Left Open` respondió
+`Correct.` tras recuperar la flag del estado de sesión de Firefox.
 
 ## Premios publicados
 
