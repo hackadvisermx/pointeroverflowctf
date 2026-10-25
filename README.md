@@ -103,8 +103,9 @@ página autenticada de ese reto.
 | 19 | Open-Source Intelligence | Where the Light Fails to Fall | **Resuelto y validado** | [write-up](06-open-source-intelligence/01-where-the-light-fails-to-fall/README.md) · [solve.py](06-open-source-intelligence/01-where-the-light-fails-to-fall/solve.py) |
 | 20 | Open-Source Intelligence | A Borrowed Name | **Resuelto y validado** | [write-up](06-open-source-intelligence/02-a-borrowed-name/README.md) · [solve.py](06-open-source-intelligence/02-a-borrowed-name/solve.py) |
 | 21 | Open-Source Intelligence | Strings Attached | **Resuelto y validado** | [write-up](06-open-source-intelligence/03-strings-attached/README.md) · [solve.py](06-open-source-intelligence/03-strings-attached/solve.py) |
+| 22 | Open-Source Intelligence | The Apparatus, Apport | **Resuelto y validado** | [write-up](06-open-source-intelligence/04-the-apparatus-apport/README.md) |
 
-Progreso actual: **21/34 retos resueltos**. La plataforma mostró `CHALLENGE
+Progreso actual: **22/34 retos resueltos**. La plataforma mostró `CHALLENGE
 SOLVED` para `Letters Never Sent`, desbloqueó el logro `Warm Up`, aceptó
 `The Apparatus, Rapport` con el mensaje `Correct. Contact is established.` y
 aceptó `The Consulting Room` con `Correct.` y `A Map of Small Things` con el
@@ -136,6 +137,8 @@ sombra y aceptó la flag con `Correct.`.
 equipo con `Landed.`.
 `Strings Attached` confirmó `Wizcorp, LLC` y aceptó el marcador específico del
 equipo con `Landed.`.
+`The Apparatus, Apport` identificó a Emma Hardinge Britten con `BRITTEN_1870`
+y respondió `Identified. The archive is closed.`.
 
 ## Premios publicados
 
@@ -152,44 +155,33 @@ equipo con `Landed.`.
 pointeroverflowctf/
 ├── README.md
 ├── 01-cryptography/
-    └── 01-letters-never-sent/
-        ├── README.md
-        └── solve.py
+│   ├── 01-letters-never-sent/
+│   ├── 02-the-apparatus-rapport/
+│   ├── 03-the-consulting-room/
+│   └── 04-a-map-of-small-things/
 ├── 02-exploitation/
-    ├── 01-the-sandglass/
-    ├── 02-read-me-my-fortune/
-    └── 03-thirty-two-steps-down/
-        ├── README.md
-        └── solve.py
+│   ├── 01-the-sandglass/
+│   ├── 02-read-me-my-fortune/
+│   ├── 03-thirty-two-steps-down/
+│   └── 04-a-few-seconds-either-way/
 ├── 03-forensics/
-    ├── 01-everything-left-open/
-    ├── 02-a-cabin-worth/
-    ├── 03-what-goes-unwritten/
-    └── 04-a-quiet-home/
-        ├── README.md
-        └── solve.py
-└── 04-game-hacking/
-    ├── 01-leap-of-faith/
-    ├── 02-health-is-a-social-construct/
-    └── 03-the-apparatus-invocation/
-        ├── README.md
-        └── solve.py
-└── 05-miscellaneous/
-    ├── 01-frequency-and-consequence/
-        ├── README.md
-        └── solve.py
-    └── 02-columns-of-holes/
-        ├── README.md
-        └── solve.py
-    └── 03-a-peculiar-game/
-        ├── README.md
-        └── solve.py
+│   ├── 01-everything-left-open/
+│   ├── 02-a-cabin-worth/
+│   ├── 03-what-goes-unwritten/
+│   └── 04-a-quiet-home/
+├── 04-game-hacking/
+│   ├── 01-leap-of-faith/
+│   ├── 02-health-is-a-social-construct/
+│   └── 03-the-apparatus-invocation/
+├── 05-miscellaneous/
+│   ├── 01-frequency-and-consequence/
+│   ├── 02-columns-of-holes/
+│   └── 03-a-peculiar-game/
 └── 06-open-source-intelligence/
     ├── 01-where-the-light-fails-to-fall/
-    └── 02-a-borrowed-name/
+    ├── 02-a-borrowed-name/
     ├── 03-strings-attached/
-        ├── README.md
-        └── solve.py
+    └── 04-the-apparatus-apport/
 ```
 
 Última revisión de la información visible del sitio: **24 de octubre de
