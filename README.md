@@ -95,8 +95,9 @@ página autenticada de ese reto.
 | 11 | Forensics | What Goes Unwritten | **Resuelto y validado** | [write-up](03-forensics/03-what-goes-unwritten/README.md) · [solve.py](03-forensics/03-what-goes-unwritten/solve.py) |
 | 12 | Forensics | A Quiet Home | **Resuelto y validado** | [write-up](03-forensics/04-a-quiet-home/README.md) · [solve.py](03-forensics/04-a-quiet-home/solve.py) |
 | 13 | Game Hacking | Leap of Faith | **Resuelto y validado** | [write-up](04-game-hacking/01-leap-of-faith/README.md) · [solve.py](04-game-hacking/01-leap-of-faith/solve.py) |
+| 14 | Game Hacking | Health Is a Social Construct | **Resuelto y validado** | [write-up](04-game-hacking/02-health-is-a-social-construct/README.md) · [solve.py](04-game-hacking/02-health-is-a-social-construct/solve.py) |
 
-Progreso actual: **13/34 retos resueltos**. La plataforma mostró `CHALLENGE
+Progreso actual: **14/34 retos resueltos**. La plataforma mostró `CHALLENGE
 SOLVED` para `Letters Never Sent`, desbloqueó el logro `Warm Up`, aceptó
 `The Apparatus, Rapport` con el mensaje `Correct. Contact is established.` y
 aceptó `The Consulting Room` con `Correct.` y `A Map of Small Things` con el
@@ -112,7 +113,9 @@ WAL de SQLite y descifrar su nota de Joplin. `What Goes Unwritten` confirmó
 `ACK :: Correct.` con el token base32 recuperado del minidump.
 `A Quiet Home` confirmó `ACK :: Correct.` tras identificar el serial del
 dispositivo ajeno en el tráfico MQTT. `Leap of Faith` devolvió el marcador
-del flujo autónomo del cliente y el formulario confirmó `Landed. Nicely done.`.
+del flujo autónomo del cliente y el formulario confirmó `Landed. Nicely done.`
+`Health Is a Social Construct` confirmó el mismo mensaje sin exigir progreso
+del juego, al reproducir su flujo de cliente.
 
 ## Premios publicados
 
@@ -146,7 +149,8 @@ pointeroverflowctf/
         ├── README.md
         └── solve.py
 └── 04-game-hacking/
-    └── 01-leap-of-faith/
+    ├── 01-leap-of-faith/
+    └── 02-health-is-a-social-construct/
         ├── README.md
         └── solve.py
 ```
