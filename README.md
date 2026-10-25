@@ -3,8 +3,8 @@
 Writeups, scripts y evidencias reproducibles del **Pointer Overflow CTF
 (POCTF) 2026**.
 
-Este repositorio es un proyecto hijo de la colección local
-[`../ctf-writeups`](../ctf-writeups/). No se guardan credenciales, cookies,
+Este repositorio es un proyecto hijo de la colección
+[CTF Writeups](https://github.com/hackadvisermx/ctf-writeups). No se guardan credenciales, cookies,
 tokens ni otros secretos de la sesión del concurso. Las flags y los artefactos
 que dependan del equipo se registran solo después de validarlos y con el
 contexto mínimo necesario.
