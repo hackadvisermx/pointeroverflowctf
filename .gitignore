@@ -1,0 +1,21 @@
+# Evidencia descargada localmente; no publicar artefactos del evento.
+evidence/
+downloads/
+*.pcap
+*.pcapng
+*.zip
+*.7z
+*.tar
+*.tar.gz
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bin
+*.iso
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
