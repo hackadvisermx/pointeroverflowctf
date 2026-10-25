@@ -92,8 +92,9 @@ página autenticada de ese reto.
 | 8 | Exploitation | A Few Seconds Either Way | **Resuelto y validado** | [write-up](02-exploitation/04-a-few-seconds-either-way/README.md) · [solve.py](02-exploitation/04-a-few-seconds-either-way/solve.py) |
 | 9 | Forensics | Everything Left Open | **Resuelto y validado** | [write-up](03-forensics/01-everything-left-open/README.md) · [solve.py](03-forensics/01-everything-left-open/solve.py) |
 | 10 | Forensics | A Cabin Worth | **Resuelto y validado** | [write-up](03-forensics/02-a-cabin-worth/README.md) · [solve.py](03-forensics/02-a-cabin-worth/solve.py) |
+| 11 | Forensics | What Goes Unwritten | **Resuelto y validado** | [write-up](03-forensics/03-what-goes-unwritten/README.md) · [solve.py](03-forensics/03-what-goes-unwritten/solve.py) |
 
-Progreso actual: **10/34 retos resueltos**. La plataforma mostró `CHALLENGE
+Progreso actual: **11/34 retos resueltos**. La plataforma mostró `CHALLENGE
 SOLVED` para `Letters Never Sent`, desbloqueó el logro `Warm Up`, aceptó
 `The Apparatus, Rapport` con el mensaje `Correct. Contact is established.` y
 aceptó `The Consulting Room` con `Correct.` y `A Map of Small Things` con el
@@ -105,7 +106,8 @@ Either Way` confirmó `Race won.` después de ganar la carrera entre el
 allowlist de lectura y el acceso al valor. `Everything Left Open` respondió
 `Correct.` tras recuperar la flag del estado de sesión de Firefox. `A Cabin
 Worth` confirmó `ACK :: Correct.` después de recuperar la fila eliminada del
-WAL de SQLite y descifrar su nota de Joplin.
+WAL de SQLite y descifrar su nota de Joplin. `What Goes Unwritten` confirmó
+`ACK :: Correct.` con el token base32 recuperado del minidump.
 
 ## Premios publicados
 
@@ -133,7 +135,8 @@ pointeroverflowctf/
         └── solve.py
 └── 03-forensics/
     ├── 01-everything-left-open/
-    └── 02-a-cabin-worth/
+    ├── 02-a-cabin-worth/
+    └── 03-what-goes-unwritten/
         ├── README.md
         └── solve.py
 ```
