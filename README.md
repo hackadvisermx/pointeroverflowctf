@@ -104,8 +104,12 @@ página autenticada de ese reto.
 | 20 | Open-Source Intelligence | A Borrowed Name | **Resuelto y validado** | [write-up](06-open-source-intelligence/02-a-borrowed-name/README.md) · [solve.py](06-open-source-intelligence/02-a-borrowed-name/solve.py) |
 | 21 | Open-Source Intelligence | Strings Attached | **Resuelto y validado** | [write-up](06-open-source-intelligence/03-strings-attached/README.md) · [solve.py](06-open-source-intelligence/03-strings-attached/solve.py) |
 | 22 | Open-Source Intelligence | The Apparatus, Apport | **Resuelto y validado** | [write-up](06-open-source-intelligence/04-the-apparatus-apport/README.md) |
+| 23 | Reverse Engineering | Panoptican | **Resuelto y validado** | [write-up](07-reverse-engineering/01-panoptican/README.md) · [solve.py](07-reverse-engineering/01-panoptican/solve.py) |
+| 24 | Reverse Engineering | The Disassembled Mind | **Resuelto y validado** | [write-up](07-reverse-engineering/02-the-disassembled-mind/README.md) · [solve.py](07-reverse-engineering/02-the-disassembled-mind/solve.py) |
+| 25 | Reverse Engineering | An Invented Language | **Resuelto y validado** | [write-up](07-reverse-engineering/04-an-invented-language/README.md) · [solve.py](07-reverse-engineering/04-an-invented-language/solve.py) |
+| 26 | Reverse Engineering | Excavation | **En análisis** | [notas](07-reverse-engineering/03-excavation/README.md) |
 
-Progreso actual: **22/34 retos resueltos**. La plataforma mostró `CHALLENGE
+Progreso actual: **25/34 retos resueltos**. La plataforma mostró `CHALLENGE
 SOLVED` para `Letters Never Sent`, desbloqueó el logro `Warm Up`, aceptó
 `The Apparatus, Rapport` con el mensaje `Correct. Contact is established.` y
 aceptó `The Consulting Room` con `Correct.` y `A Map of Small Things` con el
@@ -139,6 +143,11 @@ equipo con `Landed.`.
 equipo con `Landed.`.
 `The Apparatus, Apport` identificó a Emma Hardinge Britten con `BRITTEN_1870`
 y respondió `Identified. The archive is closed.`.
+`Panoptican` respondió `Record recovered.` tras reconstruir la imagen PGM
+embebida y aplicar el XOR de autorización. `The Disassembled Mind` respondió
+`Correct.` al combinar sus tres constantes activas byte a byte. `An Invented
+Language` respondió `The interpreter concurs.` tras emular las operaciones
+PUSH/XOR/escritura de su VM.
 
 ## Premios publicados
 
@@ -177,11 +186,16 @@ pointeroverflowctf/
 │   ├── 01-frequency-and-consequence/
 │   ├── 02-columns-of-holes/
 │   └── 03-a-peculiar-game/
-└── 06-open-source-intelligence/
+├── 06-open-source-intelligence/
     ├── 01-where-the-light-fails-to-fall/
     ├── 02-a-borrowed-name/
     ├── 03-strings-attached/
     └── 04-the-apparatus-apport/
+└── 07-reverse-engineering/
+    ├── 01-panoptican/
+    ├── 02-the-disassembled-mind/
+    ├── 03-excavation/
+    └── 04-an-invented-language/
 ```
 
 Última revisión de la información visible del sitio: **24 de octubre de
