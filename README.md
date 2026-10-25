@@ -102,8 +102,9 @@ página autenticada de ese reto.
 | 18 | Miscellaneous | A Peculiar Game | **Resuelto y validado** | [write-up](05-miscellaneous/03-a-peculiar-game/README.md) · [solve.py](05-miscellaneous/03-a-peculiar-game/solve.py) |
 | 19 | Open-Source Intelligence | Where the Light Fails to Fall | **Resuelto y validado** | [write-up](06-open-source-intelligence/01-where-the-light-fails-to-fall/README.md) · [solve.py](06-open-source-intelligence/01-where-the-light-fails-to-fall/solve.py) |
 | 20 | Open-Source Intelligence | A Borrowed Name | **Resuelto y validado** | [write-up](06-open-source-intelligence/02-a-borrowed-name/README.md) · [solve.py](06-open-source-intelligence/02-a-borrowed-name/solve.py) |
+| 21 | Open-Source Intelligence | Strings Attached | **Resuelto y validado** | [write-up](06-open-source-intelligence/03-strings-attached/README.md) · [solve.py](06-open-source-intelligence/03-strings-attached/solve.py) |
 
-Progreso actual: **20/34 retos resueltos**. La plataforma mostró `CHALLENGE
+Progreso actual: **21/34 retos resueltos**. La plataforma mostró `CHALLENGE
 SOLVED` para `Letters Never Sent`, desbloqueó el logro `Warm Up`, aceptó
 `The Apparatus, Rapport` con el mensaje `Correct. Contact is established.` y
 aceptó `The Consulting Room` con `Correct.` y `A Map of Small Things` con el
@@ -132,6 +133,8 @@ tras leer las casillas de destino como una rejilla de dos filas.
 `Where the Light Fails to Fall` confirmó Baghdad mediante la geometría de la
 sombra y aceptó la flag con `Correct.`.
 `A Borrowed Name` confirmó `Trusona` y aceptó el marcador específico del
+equipo con `Landed.`.
+`Strings Attached` confirmó `Wizcorp, LLC` y aceptó el marcador específico del
 equipo con `Landed.`.
 
 ## Premios publicados
@@ -184,6 +187,7 @@ pointeroverflowctf/
 └── 06-open-source-intelligence/
     ├── 01-where-the-light-fails-to-fall/
     └── 02-a-borrowed-name/
+    ├── 03-strings-attached/
         ├── README.md
         └── solve.py
 ```
