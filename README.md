@@ -18,7 +18,7 @@ contexto mínimo necesario.
   [cjohnson@uwsp.edu](mailto:cjohnson@uwsp.edu).
 - **Modalidad:** concurso online con participación global.
 - **Cuenta usada en esta sesión:** `hackadvisermx`, bracket **Solo**.
-- **Estado inicial de la cuenta:** 0/34 retos resueltos; registro completado.
+- **Estado inicial de la cuenta:** 0/34 retos accesibles; registro completado.
 
 ### Calendario publicado
 
@@ -59,8 +59,11 @@ se conserva la información tal como aparece publicada.
 
 ## Retos publicados en el tablero
 
-El perfil de la cuenta indica **34 retos** en total. El tablero público los
-organiza en estas categorías:
+La API autenticada lista actualmente **43 retos**. De ellos, 34 están
+accesibles y ya fueron resueltos; los 9 restantes están bloqueados y no tienen
+fecha de publicación ni URL de instancia.
+
+Los 34 retos accesibles del tablero se organizan en estas categorías:
 
 | Categoría | Retos |
 |---|---|
@@ -74,9 +77,23 @@ organiza en estas categorías:
 | Steganography | Invisible Ink · The Apparatus, The Rapping · Commit to Memory · Velocity |
 | Web | Poisoned Well · The Shape of a Query · No Structure Required · The Logic Inside |
 
-El tablero mostraba solves y puntos globales para los retos ya activos; la
-cuenta propia comenzaba sin solves. La fuente de verdad para cada reto es la
-página autenticada de ese reto.
+### Retos actualmente bloqueados
+
+| ID | Categoría | Reto | Oleada | Estado |
+|---:|---|---|---:|---|
+| 74 | Cryptography | Forty Measures Deep | 5 | Bloqueado |
+| 131 | Exploitation | What the Heap Remembers | 5 | Bloqueado |
+| 112 | Forensics | Archaeology of Mistakes | 5 | Bloqueado |
+| 49 | Game Hacking | The House Always Misses | 5 | Bloqueado |
+| 87 | Miscellaneous | Conditional Existence | 5 | Bloqueado |
+| 94 | Open-Source Intelligence | The Preserved Moment | 5 | Bloqueado |
+| 121 | Reverse Engineering | The Oracle's Weight | 5 | Bloqueado |
+| 104 | Steganography | The Hidden Path | 5 | Bloqueado |
+| 80 | Web | The Apparatus, Levitation | 5 | Bloqueado |
+
+El tablero muestra solves y puntos globales para los retos activos; la cuenta
+propia comenzó sin solves. La fuente de verdad para disponibilidad y estado es
+la página autenticada de cada reto.
 
 ## Progreso
 
@@ -117,7 +134,8 @@ página autenticada de ese reto.
 | 33 | Steganography | Invisible Ink | **Resuelto y validado** | [write-up](08-steganography/01-invisible-ink/README.md) · [solve.py](08-steganography/01-invisible-ink/solve.py) |
 | 34 | Web | No Structure Required | **Resuelto y validado** | [write-up](09-web/03-no-structure-required/README.md) |
 
-Progreso actual: **34/34 retos resueltos**. La plataforma mostró `CHALLENGE
+Progreso actual: **34/43 retos listados resueltos**; los 9 restantes están
+bloqueados. La plataforma mostró `CHALLENGE
 SOLVED` para `Letters Never Sent`, desbloqueó el logro `Warm Up`, aceptó
 `The Apparatus, Rapport` con el mensaje `Correct. Contact is established.` y
 aceptó `The Consulting Room` con `Correct.` y `A Map of Small Things` con el
@@ -232,5 +250,5 @@ pointeroverflowctf/
     └── 04-the-logic-inside/
 ```
 
-Última revisión de la información visible del sitio: **24 de octubre de
+Última revisión de la información visible del sitio: **25 de octubre de
 2026**.
