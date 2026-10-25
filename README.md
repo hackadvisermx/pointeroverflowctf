@@ -12,6 +12,7 @@ contexto mínimo necesario.
 ## Evento
 
 - **Sitio oficial:** [pointeroverflowctf.com](https://pointeroverflowctf.com/)
+- **Comunidad oficial:** [Discord de UWSP/POCTF](https://discord.com/invite/Hz6UvDtwSP)
 - **Organización:** University of Wisconsin–Stevens Point (UWSP), en honor a
   estudiantes y egresados del programa CIS: Cybersecurity.
 - **Organizador/contacto visible:** Prof. C. R. Johnson ·
@@ -56,40 +57,49 @@ se conserva la información tal como aparece publicada.
   finalizados**, se compran en orden y no es reembolsable.
 - No se permite acceder a datos o instancias de otros equipos, compartir
   flags/soluciones privadas entre equipos ni realizar DoS/DDoS.
+- Los anuncios de releases, cierres o incidencias se publican en Discord; las
+  reglas indican escalar los problemas a `@CTF-Admin`.
+
+### Incidente de Wave 5 (25 de octubre de 2026)
+
+La fecha publicada era 09:00 CDT, pero durante la mañana el canal `#poctf2026`
+reportó aperturas y cierres intermitentes, además de respuestas 502/504. A las
+08:48, el organizador indicó que estaba investigando un incidente de
+infraestructura; a las 09:07 anunció que Wave 5 estaría disponible a las
+**11:00 central (16:00 UTC)** y pidió limitar las solicitudes, advirtiendo que
+el scraping repetitivo antes del release podía descalificar participantes.
+Esta comunicación del canal es la referencia operativa para el lanzamiento.
 
 ## Retos publicados en el tablero
 
-La API autenticada lista actualmente **43 retos**. De ellos, 34 están
-accesibles y ya fueron resueltos; los 9 restantes están bloqueados y no tienen
+La API autenticada lista actualmente **43 retos**. De ellos, 37 están
+accesibles y ya fueron resueltos; los 6 restantes están bloqueados y no tienen
 fecha de publicación ni URL de instancia.
 
-Los 34 retos accesibles del tablero se organizan en estas categorías:
+Los 37 retos accesibles del tablero se organizan en estas categorías:
 
 | Categoría | Retos |
 |---|---|
-| Cryptography | Letters Never Sent · The Apparatus, Rapport · The Consulting Room · A Map of Small Things |
+| Cryptography | Letters Never Sent · The Apparatus, Rapport · The Consulting Room · A Map of Small Things · Forty Measures Deep |
 | Exploitation | The Sandglass · Read Me My Fortune · Thirty-Two Steps Down · A Few Seconds Either Way |
 | Forensics | Everything Left Open · A Cabin Worth · What Goes Unwritten · A Quiet Home |
 | Game Hacking | Leap of Faith · Health Is a Social Construct |
-| Miscellaneous | The Apparatus, Invocation · Frequency and Consequence · Columns of Holes · A Peculiar Game |
+| Miscellaneous | The Apparatus, Invocation · Frequency and Consequence · Columns of Holes · A Peculiar Game · Conditional Existence |
 | Open-Source Intelligence | A Borrowed Name · Strings Attached · Where the Light Fails to Fall · The Apparatus, Apport |
 | Reverse Engineering | Panoptican · The Disassembled Mind · Excavation · An Invented Language |
 | Steganography | Invisible Ink · The Apparatus, The Rapping · Commit to Memory · Velocity |
-| Web | Poisoned Well · The Shape of a Query · No Structure Required · The Logic Inside |
+| Web | Poisoned Well · The Shape of a Query · No Structure Required · The Logic Inside · The Apparatus, Levitation |
 
 ### Retos actualmente bloqueados
 
 | ID | Categoría | Reto | Oleada | Estado |
 |---:|---|---|---:|---|
-| 74 | Cryptography | Forty Measures Deep | 5 | Bloqueado |
 | 131 | Exploitation | What the Heap Remembers | 5 | Bloqueado |
 | 112 | Forensics | Archaeology of Mistakes | 5 | Bloqueado |
 | 49 | Game Hacking | The House Always Misses | 5 | Bloqueado |
-| 87 | Miscellaneous | Conditional Existence | 5 | Bloqueado |
 | 94 | Open-Source Intelligence | The Preserved Moment | 5 | Bloqueado |
 | 121 | Reverse Engineering | The Oracle's Weight | 5 | Bloqueado |
 | 104 | Steganography | The Hidden Path | 5 | Bloqueado |
-| 80 | Web | The Apparatus, Levitation | 5 | Bloqueado |
 
 El tablero muestra solves y puntos globales para los retos activos; la cuenta
 propia comenzó sin solves. La fuente de verdad para disponibilidad y estado es
@@ -133,8 +143,11 @@ la página autenticada de cada reto.
 | 32 | Reverse Engineering | Excavation | **Resuelto y validado** | [write-up](07-reverse-engineering/03-excavation/README.md) |
 | 33 | Steganography | Invisible Ink | **Resuelto y validado** | [write-up](08-steganography/01-invisible-ink/README.md) · [solve.py](08-steganography/01-invisible-ink/solve.py) |
 | 34 | Web | No Structure Required | **Resuelto y validado** | [write-up](09-web/03-no-structure-required/README.md) |
+| 35 | Web | The Apparatus, Levitation | **Resuelto y validado** | [write-up](09-web/05-the-apparatus-levitation/README.md) |
+| 36 | Miscellaneous | Conditional Existence | **Resuelto y validado** | [write-up](05-miscellaneous/05-conditional-existence/README.md) |
+| 37 | Cryptography | Forty Measures Deep | **Resuelto y validado** | [write-up](01-cryptography/05-forty-measures-deep/README.md) |
 
-Progreso actual: **34/43 retos listados resueltos**; los 9 restantes están
+Progreso actual: **37/43 retos listados resueltos**; los 6 restantes están
 bloqueados. La plataforma mostró `CHALLENGE
 SOLVED` para `Letters Never Sent`, desbloqueó el logro `Warm Up`, aceptó
 `The Apparatus, Rapport` con el mensaje `Correct. Contact is established.` y
@@ -190,6 +203,14 @@ aceptó `POCTF{WPFHZJFKNCCRYYDK}` al extraer ASCII de 7 bits del whitespace
 final de las líneas impares. `No Structure Required` respondió `Auditor's
 signature verified.` tras usar la inyección NoSQL del login y consultar la
 colección oculta `secrets`.
+`The Apparatus, Levitation` respondió `Correct.` después de forjar el JWT de
+rol `spirit` mediante la confusión RS256/HS256.
+`Conditional Existence` respondió `ok: true` y `solved: true` tras resolver las
+cuatro pistas, calcular la incantación `08E7795B4080` y entregar la flag al
+endpoint oficial.
+`Forty Measures Deep` respondió `ok: true` y `solved: true` después de
+decodificar las alturas MIDI con el texto conocido `POCTF` y recuperar la
+sustitución del alfabeto musical privado.
 
 ## Premios publicados
 
@@ -209,7 +230,8 @@ pointeroverflowctf/
 │   ├── 01-letters-never-sent/
 │   ├── 02-the-apparatus-rapport/
 │   ├── 03-the-consulting-room/
-│   └── 04-a-map-of-small-things/
+│   ├── 04-a-map-of-small-things/
+│   └── 05-forty-measures-deep/
 ├── 02-exploitation/
 │   ├── 01-the-sandglass/
 │   ├── 02-read-me-my-fortune/
@@ -227,7 +249,8 @@ pointeroverflowctf/
 ├── 05-miscellaneous/
 │   ├── 01-frequency-and-consequence/
 │   ├── 02-columns-of-holes/
-│   └── 03-a-peculiar-game/
+│   ├── 03-a-peculiar-game/
+│   └── 05-conditional-existence/
 ├── 06-open-source-intelligence/
     ├── 01-where-the-light-fails-to-fall/
     ├── 02-a-borrowed-name/
@@ -247,7 +270,8 @@ pointeroverflowctf/
     ├── 01-shape-of-query/
     ├── 02-poisoned-well/
     ├── 03-no-structure-required/
-    └── 04-the-logic-inside/
+    ├── 04-the-logic-inside/
+    └── 05-the-apparatus-levitation/
 ```
 
 Última revisión de la información visible del sitio: **25 de octubre de
