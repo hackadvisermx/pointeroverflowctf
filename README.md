@@ -96,8 +96,9 @@ página autenticada de ese reto.
 | 12 | Forensics | A Quiet Home | **Resuelto y validado** | [write-up](03-forensics/04-a-quiet-home/README.md) · [solve.py](03-forensics/04-a-quiet-home/solve.py) |
 | 13 | Game Hacking | Leap of Faith | **Resuelto y validado** | [write-up](04-game-hacking/01-leap-of-faith/README.md) · [solve.py](04-game-hacking/01-leap-of-faith/solve.py) |
 | 14 | Game Hacking | Health Is a Social Construct | **Resuelto y validado** | [write-up](04-game-hacking/02-health-is-a-social-construct/README.md) · [solve.py](04-game-hacking/02-health-is-a-social-construct/solve.py) |
+| 15 | Miscellaneous | The Apparatus, Invocation | **Resuelto y validado** | [write-up](04-game-hacking/03-the-apparatus-invocation/README.md) · [solve.py](04-game-hacking/03-the-apparatus-invocation/solve.py) |
 
-Progreso actual: **14/34 retos resueltos**. La plataforma mostró `CHALLENGE
+Progreso actual: **15/34 retos resueltos**. La plataforma mostró `CHALLENGE
 SOLVED` para `Letters Never Sent`, desbloqueó el logro `Warm Up`, aceptó
 `The Apparatus, Rapport` con el mensaje `Correct. Contact is established.` y
 aceptó `The Consulting Room` con `Correct.` y `A Map of Small Things` con el
@@ -116,6 +117,8 @@ dispositivo ajeno en el tráfico MQTT. `Leap of Faith` devolvió el marcador
 del flujo autónomo del cliente y el formulario confirmó `Landed. Nicely done.`
 `Health Is a Social Construct` confirmó el mismo mensaje sin exigir progreso
 del juego, al reproducir su flujo de cliente.
+`The Apparatus, Invocation` confirmó `Silent. The apparatus speaks.` tras
+resolver la cuadrícula Lights Out específica del equipo.
 
 ## Premios publicados
 
@@ -150,7 +153,8 @@ pointeroverflowctf/
         └── solve.py
 └── 04-game-hacking/
     ├── 01-leap-of-faith/
-    └── 02-health-is-a-social-construct/
+    ├── 02-health-is-a-social-construct/
+    └── 03-the-apparatus-invocation/
         ├── README.md
         └── solve.py
 ```
