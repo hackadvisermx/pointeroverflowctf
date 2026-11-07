@@ -1,0 +1,81 @@
+name: The House Always Misses - Symbol Analysis
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+      
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            libc6 \
+            libstdc++6 \
+            libx11-6 \
+            libxext6 \
+            libxrandr2 \
+            libxrender1 \
+            libxi6 \
+            libgl1 \
+            libasound2t64 \
+            libpulse0 \
+            xvfb \
+            gdb \
+            python3 \
+            python3-pip \
+            libcap2-bin
+      
+      - name: Configure ptrace
+        run: |
+          echo 0 | sudo tee /proc/sys/kernel/yama/ptrace_scope
+      
+      - name: Prepare game files
+        run: |
+          cd 04-game-hacking/03-the-house-always-misses
+          chmod +x game
+          ls -la
+      
+      - name: Create gdb analysis script
+        run: |
+          echo "aW1wb3J0IGdkYgoKcHJpbnQoIj09PSBUaGUgSG91c2UgQWx3YXlzIE1pc3NlcyAtIFN5bWJvbCBBbmFseXNpcyA9PT0iKQoKcGF0dGVybnMgPSBbCiAgICAiQ2FzdFJheSIsICJpbnRlcnNlY3RzIiwgImludGVyc2VjdF9yYXkiLCAicmF5Y2FzdCIsCiAgICAiUmF5Q2FzdCIsICJoaXQiLCAiSGl0IiwgImNvbGxpZGUiLCAiQ29sbGlkZSIsCiAgICAiaW50ZXJzZWN0X3JheSIsICJpbnRlcnNlY3RfcmF5XzJkIiwgIlBoeXNpY3NTZXJ2ZXIyRCIsCiAgICAiUGh5c2ljc1NlcnZlcjNEIiwgIlJheUNhc3QyRCIsICJSYXlDYXN0M0QiLCAiU2hhcGVDYXN0IiwKICAgICJUZXN0Qm9keSIsICJUZXN0TW90aW9uIiwgIkpQSCIsICJDYXN0UmF5IiwgIk5hcnJvd1BoYXNlUXVlcnkiLAogICAgIlJheUNhc3QiLCAiQ29sbGlzaW9uQ29sbGVjdG9yIiwgIl9wcm9jZXNzIiwgIl9waHlzaWNzX3Byb2Nlc3MiLAogICAgImhpdCIsICJIaXQiLCAiY3Jvc3NoYWlyIiwgIkNyb3NzaGFpciIsICJ0YXJnZXRfYmFzZSIsCiAgICAiVGFyZ2V0QmFzZSIsICJjaXZpbGlhbiIsICJDaXZpbGlhbiIsICJkdWNrIiwgIkR1Y2siLAogICAgImZsaXBfdGFyZ2V0IiwgIkZsaXBUYXJnZXQiLCAicG9wdXBfdGFyZ2V0IiwgIlBvcHVwVGFyZ2V0IgpdCgpwcmludCgiU2VhcmNoaW5nIGZvciBoaXQgZGV0ZWN0aW9uIGZ1bmN0aW9ucy4uLiIpCgpmb3IgcGF0dGVybiBpbiBwYXR0ZXJuczoKICAgIHRyeToKICAgICAgICByZXN1bHQgPSBnZGIuZXhlY3V0ZShmImluZm8gZnVuY3Rpb25zIHtwYXR0ZXJufSIsIHRvX3N0cmluZz1UcnVlKQogICAgICAgIGlmIHJlc3VsdC5zdHJpcCgpIGFuZCAiTm8gc3ltYm9sIiBub3QgaW4gcmVzdWx0OgogICAgICAgICAgICBwcmludChmIlxuRm91bmQge3BhdHRlcm59OiIpCiAgICAgICAgICAgIHByaW50KHJlc3VsdFo1MDBdKQogICAgZXhjZXB0IGdkYi5lcnJvciBhcyBlOgogICAgICAgIHBhc3MKCnByaW50KCJcbiA9PT0gQW5hbHlzaXMgY29tcGxldGUgPT09IikK" | base64 -d > /tmp/analyze_symbols.py
+      
+      - name: Prepare game files
+        run: |
+          cd 04-game-hacking/03-the-house-always-misses
+          chmod +x game
+          ls -la
+      
+      - name: Run game and analyze symbols
+        run: |
+          cd 04-game-hacking/03-the-house-always-misses
+          
+          sudo sysctl -w kernel.yama.ptrace_scope=0
+          
+          xvfb-run -a -s "-screen 0 1024x768x24" ./game &
+          GAME_PID=$!
+          
+          sleep 12
+          
+          sudo gdb -p $GAME_PID -batch -ex "set pagination off" -ex "source /tmp/analyze_symbols.py" 2>&1 | tee /tmp/symbol_analysis.txt
+          
+          kill $GAME_PID 2>/dev/null || true
+      
+      - name: Show analysis results
+        run: |
+          cat /tmp/symbol_analysis.txt
+      
+      - name: Upload analysis output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: symbol-analysis-output
+          path: /tmp/symbol_analysis.txt
