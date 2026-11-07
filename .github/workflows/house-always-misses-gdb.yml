@@ -1,0 +1,125 @@
+name: The House Always Misses - Targeted Memory Search
+
+on:
+  workflow_dispatch:
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+      
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            libc6 \
+            libstdc++6 \
+            libx11-6 \
+            libxext6 \
+            libxrandr2 \
+            libxrender1 \
+            libxi6 \
+            libgl1 \
+            libasound2t64 \
+            libpulse0 \
+            xvfb \
+            gdb \
+            python3 \
+            python3-pip \
+            libcap2-bin
+      
+      - name: Configure ptrace
+        run: |
+          echo 0 | sudo tee /proc/sys/kernel/yama/ptrace_scope
+      
+      - name: Prepare game files
+        run: |
+          cd 04-game-hacking/03-the-house-always-misses
+          chmod +x game
+          ls -la
+      
+      - name: Run game and search memory with gdb
+        run: |
+          cd 04-game-hacking/03-the-house-always-misses
+          
+          # Allow ptrace
+          sudo sysctl -w kernel.yama.ptrace_scope=0
+          
+          # Start game in background with xvfb
+          xvfb-run -a -s "-screen 0 1024x768x24" ./game &
+          GAME_PID=$!
+          
+          # Wait for game to initialize and load scripts
+          sleep 8
+          
+          # Attach gdb and search heap for GDScript patterns
+          cat > /tmp/gdb_search.py << 'EOF'
+import gdb
+
+# Search for GDScript patterns in heap
+patterns = [
+    b"extends",
+    b"func _ready",
+    b"func _physics_process",
+    b"hit",
+    b"shot",
+    b"target_base",
+    b"civilian",
+    b"duck",
+    b"crosshair",
+    b"Area2D",
+    b"RayCast2D",
+    b"intersects",
+]
+
+print("Searching memory for GDScript patterns...")
+
+# Get memory mappings
+mappings = gdb.execute("info proc mappings", to_string=True)
+print("Memory mappings:")
+print(mappings)
+
+# Search each readable/writable mapping
+for pattern in patterns:
+    try:
+        # Search in all mapped regions
+        result = gdb.execute(f"find /w 0x0, 0x7fffffffffff, {pattern}", to_string=True)
+        if result.strip():
+            print(f"Pattern {pattern}: FOUND")
+            print(result)
+    except gdb.error as e:
+        pass
+
+# Also search for the decrypted target_base.gdc bytecode
+# The decrypted bytecode should contain "extends" and class names
+try:
+    result = gdb.execute("find /w 0x0, 0x7fffffffffff, \"extends\"", to_string=True)
+    print("Search for 'extends':")
+    print(result)
+except gdb.error as e:
+    print(f"Error searching for 'extends': {e}")
+
+EOF
+
+          # Run gdb with the Python script
+          sudo gdb -p $GAME_PID -batch -ex "set pagination off" -ex "source /tmp/gdb_search.py" 2>&1 | tee /tmp/gdb_search_output.txt
+          
+          # Kill game
+          kill $GAME_PID 2>/dev/null || true
+      
+      - name: Show search results
+        run: |
+          cat /tmp/gdb_search_output.txt
+      
+      - name: Upload gdb output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: gdb-search-output
+          path: /tmp/gdb_search_output.txt
