@@ -1,0 +1,75 @@
+name: The House Always Misses - Memory Analysis
+
+on:
+  workflow_dispatch:
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+      
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            libc6 \
+            libstdc++6 \
+            libx11-6 \
+            libxext6 \
+            libxrandr2 \
+            libxrender1 \
+            libxi6 \
+            libgl1 \
+            libasound2t64 \
+            libpulse0 \
+            xvfb \
+            gdb \
+            python3 \
+            python3-pip
+      
+      - name: Prepare game files
+        run: |
+          cd 04-game-hacking/03-the-house-always-misses
+          chmod +x game
+          ls -la
+      
+      - name: Run game and dump memory
+        run: |
+          cd 04-game-hacking/03-the-house-always-misses
+          
+          # Start game in background with xvfb
+          xvfb-run -a -s "-screen 0 1024x768x24" ./game &
+          GAME_PID=$!
+          
+          # Wait for game to initialize
+          sleep 5
+          
+          # Attach gdb and search for decrypted scripts
+          gdb -p $GAME_PID -batch -ex "set pagination off" \
+            -ex "info proc mappings" \
+            -ex "dump memory /tmp/game_mem.bin 0x0 0x7fffffffffff" \
+            -ex "quit" 2>&1 | tee /tmp/gdb_output.txt
+          
+          # Search for decrypted GDScript in memory
+          echo "Searching for GDScript patterns in memory dump..."
+          strings /tmp/game_mem.bin | grep -E "extends|func _ready|func _physics_process|hit|shot|target_base" | head -50
+          
+          # Kill game
+          kill $GAME_PID 2>/dev/null || true
+      
+      - name: Upload memory dump (if small)
+        if: always()
+        run: |
+          if [ -f /tmp/game_mem.bin ] && [ $(stat -c%s /tmp/game_mem.bin) -lt 100000000 ]; then
+            echo "Memory dump size: $(stat -c%s /tmp/game_mem.bin) bytes"
+            # Upload as artifact
+            # (skipped for size)
+          else
+            echo "Memory dump too large or not found"
+          fi
