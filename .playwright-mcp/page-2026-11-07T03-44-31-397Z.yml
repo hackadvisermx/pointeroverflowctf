@@ -1,0 +1,16 @@
+- generic [ref=e1]:
+  - generic [ref=e2]: EXP 100 · Wave 6
+  - heading "The Interpreter's Margin" [level=1] [ref=e3]
+  - generic [ref=e4]:
+    - paragraph [ref=e5]: A sandboxed JavaScript interpreter — the kind you'd write if you wanted to let users submit code snippets to run on your server without them bringing the whole thing down. The sandbox exposes console, Math, and JSON. Nothing else is reachable from inside.
+    - paragraph [ref=e6]: The flag lives at module scope, outside the sandbox. The sandbox does not know it exists.
+    - paragraph [ref=e7]: Make the sandbox tell you anyway.
+  - generic [ref=e8]:
+    - heading "Artifact" [level=2] [ref=e9]
+    - paragraph [ref=e10]:
+      - link "Download (per-team)" [active] [ref=e11] [cursor=pointer]:
+        - /url: margin.zip
+  - generic [ref=e12]:
+    - heading "Submit" [level=2] [ref=e13]
+    - 'textbox "POCTF{...} or raw NONCE" [ref=e14]'
+    - button "Submit" [ref=e15] [cursor=pointer]

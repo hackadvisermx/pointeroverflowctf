@@ -1,0 +1,38 @@
+- generic [ref=e1]:
+  - generic [ref=e2]: GH 200 · Wave 2
+  - heading "The House Always Misses" [level=1] [ref=e3]
+  - generic [ref=e4]:
+    - paragraph [ref=e5]: A shooting-gallery arcade cabinet sits behind the Hollis boardwalk, pulled from storage after fifteen years in a Marchetti warehouse. The game runs. The targets move. Your shots never land.
+    - paragraph [ref=e6]: Three rooms. Each has moving targets you must clear. The game’s physics are deterministic and (as far as the cabinet is concerned) honest. What’s dishonest is what counts as a hit — the geometry the game checks when your bullet reaches a target. If accuracy is probability with better lies, you need to tell a different lie.
+    - paragraph [ref=e7]: Download the game binary for your OS and the credentials bundle (game.token + team.key) from the challenge page. Place them in the same folder. Run the binary — it will authenticate against your credentials and drop you into the gallery.
+  - generic [ref=e8]:
+    - heading "Get the game" [level=2] [ref=e9]
+    - paragraph [ref=e10]:
+      - text: Download the binary for your OS, download the small credentials bundle, and put them in the same folder. The game reads
+      - code [ref=e11]: game.token
+      - text: and
+      - code [ref=e12]: team.key
+      - text: from its own directory to sign your session.
+    - generic [ref=e13]:
+      - 'link "Windows POCTF2026-GH03.exe ≈ 108 MB · shared binary sha256: 7dd08f8768a850e7a547ccf8a740df6280ab7cc548e63208d196bd3bb78acd7c" [ref=e14] [cursor=pointer]':
+        - /url: binary/windows
+        - generic [ref=e15]: Windows
+        - generic [ref=e16]: POCTF2026-GH03.exe
+        - generic [ref=e17]: ≈ 108 MB · shared binary
+        - generic [ref=e18]: "sha256: 7dd08f8768a850e7a547ccf8a740df6280ab7cc548e63208d196bd3bb78acd7c"
+      - 'link "Linux POCTF2026-GH03.x86_64 ≈ 82 MB · shared binary sha256: 76efa248f3ee445d95b6c6b370a88f26581633faca207a7ba29b2740e37b9872" [active] [ref=e19] [cursor=pointer]':
+        - /url: binary/linux
+        - generic [ref=e20]: Linux
+        - generic [ref=e21]: POCTF2026-GH03.x86_64
+        - generic [ref=e22]: ≈ 82 MB · shared binary
+        - generic [ref=e23]: "sha256: 76efa248f3ee445d95b6c6b370a88f26581633faca207a7ba29b2740e37b9872"
+      - link "Your team credentials house-always-misses-credentials-team-*.zip ≈ 2 KB · per-team · extract next to the binary" [ref=e24] [cursor=pointer]:
+        - /url: credentials.zip
+        - generic [ref=e25]: Your team credentials
+        - generic [ref=e26]: house-always-misses-credentials-team-*.zip
+        - generic [ref=e27]: ≈ 2 KB · per-team · extract next to the binary
+  - generic [ref=e28]:
+    - heading "Submit the flag" [level=2] [ref=e29]
+    - 'textbox "POCTF{...}" [ref=e30]'
+    - button "Submit" [ref=e31] [cursor=pointer]
+  - generic [ref=e33]: Editing a running game's memory is legal for the game you own. It is also unreasonably fun.

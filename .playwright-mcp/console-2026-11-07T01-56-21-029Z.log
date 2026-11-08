@@ -1,0 +1,125 @@
+[   48903ms] [INFO] %c[libdiscore] 
+font-weight: bold;
+color: purple;
+ [experiment_manager] Loaded experiments from cache @ https://discord.com/assets/619666.39a9c889d48f07ce.js:464
+[   48960ms] [LOG] %c[ProcessUtilsElectron] 
+font-weight: bold;
+color: purple;
+ setMemoryInformation not available. @ https://discord.com/assets/619666.39a9c889d48f07ce.js:464
+[   49086ms] [LOG] %c[default] 
+font-weight: bold;
+color: purple;
+ [BUILD INFO] Release Channel: stable, Build Number: 667580, Version Hash: 7f6f109b760a6a8abddc126518351081780500c5 @ https://discord.com/assets/619666.39a9c889d48f07ce.js:464
+[   49088ms] [LOG] AppCrashedFatalReport: getLastCrash not supported. @ https://discord.com/assets/619666.39a9c889d48f07ce.js:464
+[   49266ms] [INFO] %c[libdiscore] 
+font-weight: bold;
+color: purple;
+ The answer for life the universe and everything is: 42 @ https://discord.com/assets/619666.39a9c889d48f07ce.js:464
+[   50149ms] [ERROR] WebSocket connection to 'ws://127.0.0.1:6463/?v=1' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ https://discord.com/assets/web.72656029554c0370.js:80
+[   50174ms] [ERROR] WebSocket connection to 'ws://127.0.0.1:6464/?v=1' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ https://discord.com/assets/web.72656029554c0370.js:80
+[   50175ms] [ERROR] WebSocket connection to 'ws://127.0.0.1:6465/?v=1' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ https://discord.com/assets/web.72656029554c0370.js:80
+[   50176ms] [ERROR] WebSocket connection to 'ws://127.0.0.1:6466/?v=1' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ https://discord.com/assets/web.72656029554c0370.js:80
+[   50178ms] [ERROR] WebSocket connection to 'ws://127.0.0.1:6467/?v=1' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ https://discord.com/assets/web.72656029554c0370.js:80
+[   50182ms] [ERROR] WebSocket connection to 'ws://127.0.0.1:6468/?v=1' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ https://discord.com/assets/web.72656029554c0370.js:80
+[   50185ms] [ERROR] WebSocket connection to 'ws://127.0.0.1:6469/?v=1' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ https://discord.com/assets/web.72656029554c0370.js:80
+[   50199ms] [ERROR] WebSocket connection to 'ws://127.0.0.1:6470/?v=1' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ https://discord.com/assets/web.72656029554c0370.js:80
+[   50220ms] [ERROR] WebSocket connection to 'ws://127.0.0.1:6471/?v=1' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ https://discord.com/assets/web.72656029554c0370.js:80
+[   50260ms] [ERROR] WebSocket connection to 'ws://127.0.0.1:6472/?v=1' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ https://discord.com/assets/web.72656029554c0370.js:80
+[   50347ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://discord.com/api/v9/auth/logout:0
+[   50348ms] [LOG] %c[Flux] 
+font-weight: bold;
+color: purple;
+ Dispatching LOGOUT @ https://discord.com/assets/619666.39a9c889d48f07ce.js:464
+[   50356ms] [INFO] %c[Clips] 
+font-weight: bold;
+color: purple;
+ decider: clear() called — currentSessionGameKey=null currentSessionId=undefined pendingSessionGameKey=null candidates=0 @ https://discord.com/assets/619666.39a9c889d48f07ce.js:464
+[   50357ms] [LOG] %c[Routing/Utils] 
+font-weight: bold;
+color: purple;
+ transitionTo - Transitioning to /login?redirect_to=%2Foauth2%2Fauthorize%3Fclient_id%3D1441205068367003648%26redirect_uri%3Dhttps%253A%252F%252Fpointeroverflowctf.com%252Fauth%252Fdiscord%252Fcallback%26response_type%3Dcode%26scope%3Didentify%26state%3DnnsGHxz7AzUIubo-qL_o4lEzRn0vHBgf%26prompt%3Dconsent @ https://discord.com/assets/619666.39a9c889d48f07ce.js:464
+[   50439ms] HTTPResponseError: POST /auth/logout [401]
+    at https://discord.com/assets/web.72656029554c0370.js:19:25142
+[   50435ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://discord.com/api/v9/auth/logout:0
+[   50436ms] [LOG] %c[Flux] 
+font-weight: bold;
+color: purple;
+ Dispatching LOGOUT @ https://discord.com/assets/619666.39a9c889d48f07ce.js:464
+[   50438ms] [INFO] %c[Clips] 
+font-weight: bold;
+color: purple;
+ decider: clear() called — currentSessionGameKey=null currentSessionId=undefined pendingSessionGameKey=null candidates=0 @ https://discord.com/assets/619666.39a9c889d48f07ce.js:464
+[   50439ms] [LOG] %c[Routing/Utils] 
+font-weight: bold;
+color: purple;
+ transitionTo - Transitioning to /login?redirect_to=%2Foauth2%2Fauthorize%3Fclient_id%3D1441205068367003648%26redirect_uri%3Dhttps%253A%252F%252Fpointeroverflowctf.com%252Fauth%252Fdiscord%252Fcallback%26response_type%3Dcode%26scope%3Didentify%26state%3DnnsGHxz7AzUIubo-qL_o4lEzRn0vHBgf%26prompt%3Dconsent @ https://discord.com/assets/619666.39a9c889d48f07ce.js:464
+[   50443ms] HTTPResponseError: POST /auth/logout [401]
+    at https://discord.com/assets/web.72656029554c0370.js:19:25142
+[   50463ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://discord.com/api/v9/users/@me?with_analytics_token=true:0
+[   51017ms] [INFO] %c[useAuthWebsocket] 
+font-weight: bold;
+color: purple;
+ [0ms] connecting to wss://remote-auth-gateway.discord.gg/?v=2 @ https://discord.com/assets/619666.39a9c889d48f07ce.js:464
+[   52197ms] [INFO] %c[useAuthWebsocket] 
+font-weight: bold;
+color: purple;
+ [1182ms] got hello, auth timeout=356854ms @ https://discord.com/assets/619666.39a9c889d48f07ce.js:464
+[   52226ms] [INFO] %c[useAuthWebsocket] 
+font-weight: bold;
+color: purple;
+ [1211ms] connected, handshaking with fingerprint: H7PdbKH3betf28abPN_3oEHFLl2IQPkfbd6Mkmpmoog @ https://discord.com/assets/619666.39a9c889d48f07ce.js:464
+[   52550ms] [INFO] %c[useAuthWebsocket] 
+font-weight: bold;
+color: purple;
+ [1534ms] computed nonce proof @ https://discord.com/assets/619666.39a9c889d48f07ce.js:464
+[   52714ms] [INFO] %c[useAuthWebsocket] 
+font-weight: bold;
+color: purple;
+ [1699ms] handshake complete awaiting remote auth. @ https://discord.com/assets/619666.39a9c889d48f07ce.js:464
+[   88081ms] [INFO] %c[useAuthWebsocket] 
+font-weight: bold;
+color: purple;
+ [37064ms] remote auth handshake started, awaiting ticket/cancel. @ https://discord.com/assets/619666.39a9c889d48f07ce.js:464
+[  104302ms] [LOG] %c[Flux] 
+font-weight: bold;
+color: purple;
+ Dispatching LOGIN @ https://discord.com/assets/619666.39a9c889d48f07ce.js:464
+[  104303ms] [LOG] %c[Flux] 
+font-weight: bold;
+color: purple;
+ Dispatching LOGIN_SUCCESS @ https://discord.com/assets/619666.39a9c889d48f07ce.js:464
+[  104311ms] [LOG] %c[Routing/Utils] 
+font-weight: bold;
+color: purple;
+ transitionTo - Transitioning to /oauth2/authorize?client_id=1441205068367003648&redirect_uri=https%3A%2F%2Fpointeroverflowctf.com%2Fauth%2Fdiscord%2Fcallback&response_type=code&scope=identify&state=nnsGHxz7AzUIubo-qL_o4lEzRn0vHBgf&prompt=consent @ https://discord.com/assets/619666.39a9c889d48f07ce.js:464
+[  104328ms] [INFO] %c[useAuthWebsocket] 
+font-weight: bold;
+color: purple;
+ [53313ms] cleaning up @ https://discord.com/assets/619666.39a9c889d48f07ce.js:464
+[  104339ms] [ERROR] %c[KeybindsStore] 
+font-weight: bold;
+color: purple;
+ [kb store] KeybindStore: Looking for callback action TOGGLE_OVERLAY_INPUT_LOCK but it doesn't exist in this version. Skipping @ https://discord.com/assets/619666.39a9c889d48f07ce.js:464
+[  104339ms] [ERROR] %c[KeybindsStore] 
+font-weight: bold;
+color: purple;
+ [kb store] KeybindStore: Looking for callback action SOUNDBOARD_HOLD but it doesn't exist in this version. Skipping @ https://discord.com/assets/619666.39a9c889d48f07ce.js:464
+[  104339ms] [ERROR] %c[KeybindsStore] 
+font-weight: bold;
+color: purple;
+ [kb store] KeybindStore: Looking for callback action SAVE_CLIP but it doesn't exist in this version. Skipping @ https://discord.com/assets/619666.39a9c889d48f07ce.js:464
+[  104339ms] [ERROR] %c[KeybindsStore] 
+font-weight: bold;
+color: purple;
+ [kb store] KeybindStore: Looking for callback action SAVE_SCREENSHOT but it doesn't exist in this version. Skipping @ https://discord.com/assets/619666.39a9c889d48f07ce.js:464
+[  104346ms] Transitioning to authenticated state
+[  104670ms] [INFO] %c[SignalHelpers.web] 
+font-weight: bold;
+color: purple;
+ signalCurrentUserDetails {rpId: discord.com, userId: MPMD-4wmT1MMmgTmAIIQMg, name: hackadviser@gmail.com, displayName: hackadvisermx} @ https://discord.com/assets/619666.39a9c889d48f07ce.js:464
+[  104856ms] [INFO] %c[SignalHelpers.web] 
+font-weight: bold;
+color: purple;
+ signalCurrentUserDetails {rpId: discord.com, userId: MPMD-4wmT1MMmgTmAIIQMg, name: hackadviser@gmail.com, displayName: hackadvisermx} @ https://discord.com/assets/619666.39a9c889d48f07ce.js:464
+[  112273ms] [ERROR] Failed to load resource: the server responded with a status of 503 () @ https://pointeroverflowctf.com/img/achievements/unkillable_boss.png:0
+[  112517ms] [LOG] profile data: {achievements: Array(2), logged_in: true, stats: Object, team_members: Array(1), user: Object} @ https://pointeroverflowctf.com/js/profile.js:199

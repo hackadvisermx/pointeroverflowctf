@@ -46,7 +46,41 @@ jobs:
       
       - name: Create gdb analysis script
         run: |
-          echo "aW1wb3J0IGdkYgoKcHJpbnQoIj09PSBUaGUgSG91c2UgQWx3YXlzIE1pc3NlcyAtIFN5bWJvbCBBbmFseXNpcyA9PT0iKQoKcGF0dGVybnMgPSBbCiAgICAiQ2FzdFJheSIsICJpbnRlcnNlY3RzIiwgImludGVyc2VjdF9yYXkiLCAicmF5Y2FzdCIsCiAgICAiUmF5Q2FzdCIsICJoaXQiLCAiSGl0IiwgImNvbGxpZGUiLCAiQ29sbGlkZSIsCiAgICAiaW50ZXJzZWN0X3JheSIsICJpbnRlcnNlY3RfcmF5XzJkIiwgIlBoeXNpY3NTZXJ2ZXIyRCIsCiAgICAiUGh5c2ljc1NlcnZlcjNEIiwgIlJheUNhc3QyRCIsICJSYXlDYXN0M0QiLCAiU2hhcGVDYXN0IiwKICAgICJUZXN0Qm9keSIsICJUZXN0TW90aW9uIiwgIkpQSCIsICJDYXN0UmF5IiwgIk5hcnJvd1BoYXNlUXVlcnkiLAogICAgIlJheUNhc3QiLCAiQ29sbGlzaW9uQ29sbGVjdG9yIiwgIl9wcm9jZXNzIiwgIl9waHlzaWNzX3Byb2Nlc3MiLAogICAgImhpdCIsICJIaXQiLCAiY3Jvc3NoYWlyIiwgIkNyb3NzaGFpciIsICJ0YXJnZXRfYmFzZSIsCiAgICAiVGFyZ2V0QmFzZSIsICJjaXZpbGlhbiIsICJDaXZpbGlhbiIsICJkdWNrIiwgIkR1Y2siLAogICAgImZsaXBfdGFyZ2V0IiwgIkZsaXBUYXJnZXQiLCAicG9wdXBfdGFyZ2V0IiwgIlBvcHVwVGFyZ2V0IgpdCgpwcmludCgiU2VhcmNoaW5nIGZvciBoaXQgZGV0ZWN0aW9uIGZ1bmN0aW9ucy4uLiIpCgpmb3IgcGF0dGVybiBpbiBwYXR0ZXJuczoKICAgIHRyeToKICAgICAgICByZXN1bHQgPSBnZGIuZXhlY3V0ZShmImluZm8gZnVuY3Rpb25zIHtwYXR0ZXJufSIsIHRvX3N0cmluZz1UcnVlKQogICAgICAgIGlmIHJlc3VsdC5zdHJpcCgpIGFuZCAiTm8gc3ltYm9sIiBub3QgaW4gcmVzdWx0OgogICAgICAgICAgICBwcmludChmIlxuRm91bmQge3BhdHRlcm59OiIpCiAgICAgICAgICAgIHByaW50KHJlc3VsdFo1MDBdKQogICAgZXhjZXB0IGdkYi5lcnJvciBhcyBlOgogICAgICAgIHBhc3MKCnByaW50KCJcbiA9PT0gQW5hbHlzaXMgY29tcGxldGUgPT09IikK" | base64 -d > /tmp/analyze_symbols.py
+          python3 -c "
+import base64
+script = b'''import gdb
+
+print(\"=== The House Always Misses - Symbol Analysis ===\")
+
+patterns = [
+    \"CastRay\", \"intersects\", \"intersect_ray\", \"raycast\",
+    \"RayCast\", \"hit\", \"Hit\", \"collide\", \"Collide\",
+    \"intersect_ray\", \"intersect_ray_2d\", \"PhysicsServer2D\",
+    \"PhysicsServer3D\", \"RayCast2D\", \"RayCast3D\", \"ShapeCast\",
+    \"TestBody\", \"TestMotion\", \"JPH\", \"CastRay\", \"NarrowPhaseQuery\",
+    \"RayCast\", \"CollisionCollector\", \"_process\", \"_physics_process\",
+    \"hit\", \"Hit\", \"crosshair\", \"Crosshair\", \"target_base\",
+    \"TargetBase\", \"civilian\", \"Civilian\", \"duck\", \"Duck\",
+    \"flip_target\", \"FlipTarget\", \"popup_target\", \"PopupTarget\"
+]
+
+print(\"Searching for hit detection functions...\")
+
+for pattern in patterns:
+    try:
+        result = gdb.execute(\"info functions \" + pattern, to_string=True)
+        if result.strip() and \"No symbol\" not in result:
+            print(\"\\nFound '\" + pattern + \"':\")
+            print(result[:500])
+    except gdb.error as e:
+        pass
+
+print(\"\\n=== Analysis complete ===\")
+'''
+with open('/tmp/analyze_symbols.py', 'wb') as f:
+    f.write(script)
+print('Script written to /tmp/analyze_symbols.py')
+"
       
       - name: Prepare game files
         run: |

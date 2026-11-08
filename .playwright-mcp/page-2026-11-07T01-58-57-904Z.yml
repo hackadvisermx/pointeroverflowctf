@@ -1,0 +1,271 @@
+- generic [active] [ref=f16e1]:
+  - banner [ref=f16e2]:
+    - generic "POCTF" [ref=f16e3]:
+      - link [ref=f16e4] [cursor=pointer]:
+        - /url: /
+        - img "POCTF logo" [ref=f16e5]
+      - navigation "Header links" [ref=f16e6]:
+        - link "Rules" [ref=f16e7] [cursor=pointer]:
+          - /url: /rules.html
+        - link "Privacy" [ref=f16e8] [cursor=pointer]:
+          - /url: /privacy.html
+        - link "Prizes" [ref=f16e9] [cursor=pointer]:
+          - /url: /prizes.html
+        - link "2026 Scoreboard" [ref=f16e10] [cursor=pointer]:
+          - /url: /scoreboard.html
+        - link "Hall of Fame" [ref=f16e11] [cursor=pointer]:
+          - /url: /hall-of-fame.html
+        - link "Challenges" [ref=f16e12] [cursor=pointer]:
+          - /url: /challenge-board.html
+        - link "Profile (hackadvisermx)" [ref=f16e13] [cursor=pointer]:
+          - /url: /profile.html
+  - main [ref=f16e14]:
+    - region [ref=f16e15]:
+      - generic [ref=f16e16]:
+        - generic [ref=f16e17]:
+          - heading [level=1] [ref=f16e18]:
+            - text: POCTF
+            - strong [ref=f16e19]: "2026"
+            - text: — Registration Open
+          - paragraph [ref=f16e20]:
+            - text: The 2026 edition of UWSP's annual multi‑bracket capture‑the‑flag competition launches
+            - strong [ref=f16e21]: Sunday, September 27 at 09:00 CDT
+            - text: . New challenges, tighter infrastructure, improved scoring, first‑blood bonuses, and a long list of surprises. Register now and lock in your team.
+          - generic [ref=f16e22]:
+            - heading [level=2] [ref=f16e23]:
+              - text: POCTF 2026 is live —
+              - emphasis [ref=f16e24]: register and jump in
+            - paragraph [ref=f16e25]: The contest began on Sunday, September 27, 2026 with Wave 1. New waves release weekly through November — plenty of time to catch up.
+            - list [ref=f16e26]:
+              - listitem [ref=f16e27]:
+                - generic [ref=f16e28]: Wave 2
+                - text: October 4, 2026 · 09:00 CDT
+              - listitem [ref=f16e29]:
+                - generic [ref=f16e30]: Wave 3
+                - text: October 11, 2026 · 09:00 CDT
+              - listitem [ref=f16e31]:
+                - generic [ref=f16e32]: Wave 4
+                - text: October 18, 2026 · 09:00 CDT
+              - listitem [ref=f16e33]:
+                - generic [ref=f16e34]: Wave 5
+                - text: October 25, 2026 · 09:00 CDT
+              - listitem [ref=f16e35]:
+                - generic [ref=f16e36]: Wave 6
+                - text: November 1, 2026 · 09:00 CST
+              - listitem [ref=f16e37]:
+                - generic [ref=f16e38]: Wave 7
+                - text: November 8, 2026 · 09:00 CST
+              - listitem [ref=f16e39]:
+                - generic [ref=f16e40]: Wave 8
+                - text: November 15, 2026 · 09:00 CST
+            - paragraph [ref=f16e41]:
+              - text: Contest closes
+              - strong [ref=f16e42]: Sunday, December 6, 2026 · 16:00 CST
+              - text: .
+          - group "Primary actions" [ref=f16e43]:
+            - link "Register Now!" [ref=f16e44] [cursor=pointer]:
+              - /url: registration.html
+            - link "About POCTF" [ref=f16e45] [cursor=pointer]:
+              - /url: "#about"
+        - generic "POCTF 2026 highlights" [ref=f16e46]:
+          - generic [ref=f16e47]:
+            - img "New Game Hacking category!" [ref=f16e49]
+            - img "First blood points!" [ref=f16e51]
+            - img "Weighted challenge points!" [ref=f16e53]
+            - img "Category MVPs!" [ref=f16e55]
+            - generic [ref=f16e56]:
+              - img "Individual, academic, and international team brackets!" [ref=f16e57]
+              - generic [ref=f16e58]: Solo, team, and academic brackets — you're not competing against the same field.
+            - generic [ref=f16e59]:
+              - img "New and improved!" [ref=f16e60]
+              - generic [ref=f16e61]: Completely rebuilt infrastructure for speed and reliability.
+            - generic [ref=f16e62]:
+              - img "Throwback Challenges" [ref=f16e63]
+              - generic [ref=f16e64]: Winners from previous years are commemorated in the Hall of Fame until the literal heat death of the universe.
+          - generic [ref=f16e65]:
+            - button "Previous slide" [ref=f16e66] [cursor=pointer]: ❮
+            - button "Next slide" [ref=f16e67] [cursor=pointer]: ❯
+    - region [ref=f16e68]:
+      - heading "About" [level=2] [ref=f16e69]
+      - paragraph [ref=f16e70]:
+        - text: "Welcome to the Pointer Overflow CTF! POCTF 2026 launches Sunday, September 27 at 09:00 CDT. Registration is open now — sign up individually or with a team, pick your bracket, and get ready. POCTF is designed for learners, newcomers, and anyone exploring the world of cybersecurity and CTFs. Whether this will be your first competition or your next milestone, this contest is built to be accessible, educational, and community-driven. The Pointer Overflow CTF is organized in honor of the students and alumni of the CIS: Cybersecurity program at the University of Wisconsin–Stevens Point. The contest continues to support our mission of expanding hands-on cybersecurity education through the"
+        - link "Center for Cybersecurity Studies and Advanced Research" [ref=f16e71] [cursor=pointer]:
+          - /url: https://www.uwsp.edu/smcpa/school-of-mathematics-computing-physics-and-astronomy/center-for-cybersecurity-studies-and-advanced-research/
+        - text: . If you’re considering a career in cybersecurity, UW-Stevens Point offers both an
+        - link "Undergraduate Cybersecurity" [ref=f16e72] [cursor=pointer]:
+          - /url: https://www.uwsp.edu/programs/degree/computer-information-system/
+        - text: option and a
+        - link "Graduate Cybersecurity" [ref=f16e73] [cursor=pointer]:
+          - /url: https://www.uwsp.edu/programs/degree/master-of-science-in-cybersecurity-2/
+        - text: program through the UW Extended Campus collaborative degree. And if you’d like to support research, outreach, and student development, UWSP is now able to accept direct donations—every dollar goes toward expanding cybersecurity education and research on campus. Our
+        - link "Discord community" [ref=f16e74] [cursor=pointer]:
+          - /url: https://discord.com/invite/Hz6UvDtwSP
+        - text: is the fastest place to get help, ask questions, and follow announcements before and during the contest.
+        - link "RSVP to the POCTF 2026 event on our Discord." [ref=f16e75] [cursor=pointer]:
+          - /url: https://discord.com/events/1050800926912413828/1428367676878884955
+      - generic "Key facts" [ref=f16e76]:
+        - generic [ref=f16e77]:
+          - heading "Current Status" [level=4] [ref=f16e78]
+          - paragraph [ref=f16e79]:
+            - strong [ref=f16e80]: Registration open
+            - text: — sign up now, waves open Sept 27.
+        - generic [ref=f16e81]:
+          - heading "Start Date" [level=4] [ref=f16e82]
+          - paragraph [ref=f16e83]: Sunday, September 27, 2026 at 8:00 AM
+        - generic [ref=f16e84]:
+          - heading "Location" [level=4] [ref=f16e85]
+          - paragraph [ref=f16e86]: Online — global participation
+        - generic [ref=f16e87]:
+          - heading "Contact" [level=4] [ref=f16e88]
+          - paragraph [ref=f16e89]:
+            - link "cjohnson@uwsp.edu" [ref=f16e90] [cursor=pointer]:
+              - /url: mailto:cjohnson@uwsp.edu
+        - generic [ref=f16e91]:
+          - heading "Donate" [level=4] [ref=f16e92]
+          - paragraph [ref=f16e93]:
+            - img "QR code linking to the UWSP donation page" [ref=f16e94]
+    - iframe [ref=f16e95]:
+      - generic [ref=f17e1]:
+        - generic [ref=f17e2]:
+          - link [ref=f17e3] [cursor=pointer]:
+            - /url: https://discord.com?utm_source=Discord%20Widget&utm_medium=Logo
+          - generic [ref=f17e4]:
+            - strong [ref=f17e5]: "109"
+            - text: Members Online
+        - generic [ref=f17e7]:
+          - generic [ref=f17e8]: Members Online
+          - generic [ref=f17e9]:
+            - generic [ref=f17e10]: 0...
+            - generic [ref=f17e14]: 2...
+            - generic [ref=f17e18]: "46"
+            - generic [ref=f17e22]: a...
+            - generic [ref=f17e26]:
+              - generic [ref=f17e29]: a...
+              - generic [ref=f17e30]: "Clair Obscur: Expedition 33"
+            - generic [ref=f17e31]:
+              - generic [ref=f17e34]: a...
+              - generic [ref=f17e35]: Valorant Tracker App
+            - generic [ref=f17e36]: ariana
+            - generic [ref=f17e40]: asirouter
+            - generic [ref=f17e44]: b...
+            - generic [ref=f17e48]: Benbob3
+            - generic [ref=f17e52]: Beznadijne 🇺🇦
+            - generic [ref=f17e56]: Blexx
+            - generic [ref=f17e60]: boffman
+            - generic [ref=f17e64]: Ch1v4ss
+            - generic [ref=f17e68]: Chesda
+            - generic [ref=f17e72]: Coolguy101
+            - generic [ref=f17e76]: CX330
+            - generic [ref=f17e80]: Cyanide
+            - generic [ref=f17e84]: d...
+            - generic [ref=f17e88]: Daniel
+            - generic [ref=f17e92]: Daniel Wedlund
+            - generic [ref=f17e96]: David Rodriguez
+            - generic [ref=f17e100]: Derschaften
+            - generic [ref=f17e104]: DromHour
+            - generic [ref=f17e108]: e1gle
+            - generic [ref=f17e112]: EightBitOni
+            - generic [ref=f17e116]: ELFENSJóN
+            - generic [ref=f17e120]: f...
+            - generic [ref=f17e124]: f...
+            - generic [ref=f17e128]: Grand
+            - generic [ref=f17e132]: h...
+            - generic [ref=f17e136]: HiddenUser
+            - generic [ref=f17e140]: Hikari
+            - generic [ref=f17e144]: it4
+            - generic [ref=f17e148]: Jaden
+            - generic [ref=f17e152]: k...
+            - generic [ref=f17e156]: KAiZ3n
+            - generic [ref=f17e160]: KALAKALA
+            - generic [ref=f17e164]: KazeTachinuu
+            - generic [ref=f17e168]: KiRiTo_201
+            - generic [ref=f17e172]: l...
+            - generic [ref=f17e176]: Loading...
+            - generic [ref=f17e180]:
+              - generic [ref=f17e183]: m...
+              - generic [ref=f17e184]: League of Legends
+            - generic [ref=f17e185]: M4gicalname
+            - generic [ref=f17e189]: Maple
+            - generic [ref=f17e193]: Mari
+            - generic [ref=f17e197]: Maru | 마루
+            - generic [ref=f17e201]: MasterSwords
+            - generic [ref=f17e205]: Michael G
+            - generic [ref=f17e209]: module farmer
+            - generic [ref=f17e213]: MON
+            - generic [ref=f17e217]: mrrobert
+            - generic [ref=f17e221]: MrYellowOwl
+            - generic [ref=f17e225]: mxsck
+            - generic [ref=f17e229]: n...
+            - generic [ref=f17e233]: Negus🌊
+            - generic [ref=f17e237]: o...
+            - generic [ref=f17e241]: Orca0x
+            - generic [ref=f17e245]: p...
+            - generic [ref=f17e249]: p...
+            - generic [ref=f17e253]: Potato Farmer
+            - generic [ref=f17e257]:
+              - generic [ref=f17e260]: q...
+              - generic [ref=f17e261]: "Call of Duty®: Modern Warfare 4"
+            - generic [ref=f17e262]: r...
+            - generic [ref=f17e266]: ren
+            - generic [ref=f17e270]: Rip Van Winkle
+            - generic [ref=f17e274]: roger idk
+            - generic [ref=f17e278]: Rushi22
+            - generic [ref=f17e282]: s...
+            - generic [ref=f17e286]: sasa
+            - generic [ref=f17e290]: sasuke_1
+            - generic [ref=f17e294]: Scarlet
+            - generic [ref=f17e298]: Shiinn
+            - generic [ref=f17e302]: Skoubri
+            - generic [ref=f17e306]: SnakeTank
+            - generic [ref=f17e310]: Solaris
+            - generic [ref=f17e314]: SÉANCE.EXE
+            - generic [ref=f17e318]: t...
+            - generic [ref=f17e322]: Techno Cricket
+            - generic [ref=f17e326]: Teeto
+            - generic [ref=f17e330]: Thorbeam
+            - generic [ref=f17e334]: Toothlesstalon
+            - generic [ref=f17e338]: trashcan
+            - generic [ref=f17e342]: TryZ
+            - generic [ref=f17e346]: Unikitty
+            - generic [ref=f17e350]: unOrdinaryDaily
+            - generic [ref=f17e354]: uzi
+            - generic [ref=f17e358]: V3XV
+            - generic [ref=f17e362]: v3xx
+            - generic [ref=f17e366]: VanillaZee
+            - generic [ref=f17e370]: vAurora
+            - generic [ref=f17e374]: Who1sm3
+            - generic [ref=f17e378]: Whok
+            - generic [ref=f17e382]:
+              - generic [ref=f17e385]: Will
+              - generic [ref=f17e386]: Overwatch
+            - generic [ref=f17e387]: x3m
+            - generic [ref=f17e391]: Yang Ngô
+            - generic [ref=f17e395]: Yuuki0x00
+            - generic [ref=f17e399]: 孫悟空
+            - generic [ref=f17e403]: 若米
+            - generic [ref=f17e407]: 김민주
+            - generic [ref=f17e411]: 𝓘𝓡𝓥𝓐𝓝𝓝𝓘
+        - generic [ref=f17e415]:
+          - generic [ref=f17e416]: Hangout with people who get it
+          - link "Join Discord" [ref=f17e417] [cursor=pointer]:
+            - /url: https://discord.com/invite/2hJaf7am?utm_source=Discord%20Widget&utm_medium=Connect
+    - region [ref=f16e96]:
+      - heading "Stay in the loop" [level=2] [ref=f16e97]
+      - paragraph [ref=f16e98]:
+        - text: If you'd like a heads‑up when registration opens, complete
+        - link "this form" [ref=f16e99] [cursor=pointer]:
+          - /url: https://forms.gle/A3dmeu6VJwkPpwTw7
+        - text: to add your email to the list.
+      - generic [ref=f16e100]: We only use this to announce important POCTF 2026 milestones.
+  - contentinfo [ref=f16e101]:
+    - generic [ref=f16e102]:
+      - generic [ref=f16e103]: © 2026 Prof. C. R. Johnson, UW–Stevens Point • Pointer Overflow CTF
+      - navigation "Footer links" [ref=f16e104]:
+        - link "Accessibility" [ref=f16e105] [cursor=pointer]:
+          - /url: /accessibility.html
+        - link "Rules" [ref=f16e106] [cursor=pointer]:
+          - /url: /rules.html
+        - link "Privacy" [ref=f16e107] [cursor=pointer]:
+          - /url: /privacy.html
+  - button "Open accessibility settings" [ref=f16e108] [cursor=pointer]:
+    - generic [aria-hidden] [ref=f16e109]: ♿

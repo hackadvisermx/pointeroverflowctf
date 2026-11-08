@@ -1,0 +1,86 @@
+- generic [active] [ref=f2e1]:
+  - banner [ref=f2e2]:
+    - generic "POCTF" [ref=f2e3]:
+      - link [ref=f2e4] [cursor=pointer]:
+        - /url: /
+        - img "POCTF logo" [ref=f2e5]
+      - navigation "Header links" [ref=f2e6]:
+        - link "Rules" [ref=f2e7] [cursor=pointer]:
+          - /url: /rules.html
+        - link "Privacy" [ref=f2e8] [cursor=pointer]:
+          - /url: /privacy.html
+        - link "Prizes" [ref=f2e9] [cursor=pointer]:
+          - /url: /prizes.html
+        - link "2026 Scoreboard" [ref=f2e10] [cursor=pointer]:
+          - /url: /scoreboard.html
+        - link "Hall of Fame" [ref=f2e11] [cursor=pointer]:
+          - /url: /hall-of-fame.html
+        - link "Challenges" [ref=f2e12] [cursor=pointer]:
+          - /url: /challenge-board.html
+        - link "Profile (hackadvisermx)" [ref=f2e13] [cursor=pointer]:
+          - /url: /profile.html
+  - main [ref=f2e14]:
+    - generic [ref=f2e16]:
+      - generic [ref=f2e17]:
+        - generic [ref=f2e18]:
+          - link "← Back to Challenge Board" [ref=f2e19] [cursor=pointer]:
+            - /url: /challenge-board.html
+          - text: game3
+        - heading "The House Always Misses" [level=1] [ref=f2e20]
+        - paragraph [ref=f2e21]: "Briefing loaded. Status: Unsolved."
+        - generic [ref=f2e22]: "Category: Game Hacking • Wave: 5 • Points: 100 • Solves: 100"
+      - separator [ref=f2e23]
+      - generic [ref=f2e24]:
+        - generic [ref=f2e25]:
+          - paragraph [ref=f2e26]: A shooting-gallery arcade cabinet sits behind the Hollis boardwalk, pulled from storage after fifteen years in a Marchetti warehouse. The game runs. The targets move. Your shots never land.
+          - paragraph [ref=f2e27]: Three rooms. Each has moving targets you must clear. The game’s physics are deterministic and (as far as the cabinet is concerned) honest. What’s dishonest is what counts as a hit — the geometry the game checks when your bullet reaches a target. If accuracy is probability with better lies, you need to tell a different lie.
+          - paragraph [ref=f2e28]: Download the game binary for your OS and the credentials bundle (game.token + team.key) from the challenge page. Place them in the same folder. Run the binary — it will authenticate against your credentials and drop you into the gallery.
+        - link "Open Target" [ref=f2e30] [cursor=pointer]:
+          - /url: /challenges/house-always-misses/
+        - separator [ref=f2e31]
+        - generic [ref=f2e32]:
+          - heading "Hints" [level=2] [ref=f2e33]
+          - paragraph [ref=f2e34]:
+            - text: Each hint costs
+            - strong [ref=f2e35]: "10"
+            - text: finalized points. Your team has
+            - strong [ref=f2e36]: "4083"
+            - text: finalized points to spend.
+          - generic [ref=f2e37]:
+            - generic [ref=f2e39]:
+              - generic [ref=f2e40]:
+                - strong [ref=f2e41]: Hint 1
+                - text: 10 pts
+              - button "Buy" [ref=f2e42]
+            - generic [ref=f2e44]:
+              - generic [ref=f2e45]:
+                - strong [ref=f2e46]: Hint 2
+                - text: 10 pts
+              - button "Locked" [disabled] [ref=f2e47]
+            - generic [ref=f2e49]:
+              - generic [ref=f2e50]:
+                - strong [ref=f2e51]: Hint 3
+                - text: 10 pts
+              - button "Locked" [disabled] [ref=f2e52]
+        - generic [ref=f2e54]:
+          - heading "Submit Flag" [level=2] [ref=f2e55]
+          - text: Flag
+          - textbox "Flag" [ref=f2e56]:
+            - /placeholder: "POCTF{...}"
+          - button "Submit" [ref=f2e58]
+          - paragraph [ref=f2e59]:
+            - text: Flags are of the form
+            - code [ref=f2e60]: "POCTF{...}"
+            - text: . Each flag is unique to your team!
+  - contentinfo [ref=f2e61]:
+    - generic [ref=f2e62]:
+      - generic [ref=f2e63]: © 2026 Prof. C. R. Johnson, UW–Stevens Point • Pointer Overflow CTF
+      - navigation "Footer links" [ref=f2e64]:
+        - link "Accessibility" [ref=f2e65] [cursor=pointer]:
+          - /url: /accessibility.html
+        - link "Rules" [ref=f2e66] [cursor=pointer]:
+          - /url: /rules.html
+        - link "Privacy" [ref=f2e67] [cursor=pointer]:
+          - /url: /privacy.html
+  - button "Open accessibility settings" [ref=f2e68] [cursor=pointer]:
+    - generic [aria-hidden] [ref=f2e69]: ♿

@@ -1,0 +1,59 @@
+- generic [active] [ref=f20e1]:
+  - banner [ref=f20e2]:
+    - generic "POCTF" [ref=f20e3]:
+      - link [ref=f20e4] [cursor=pointer]:
+        - /url: /
+        - img "POCTF logo" [ref=f20e5]
+      - navigation "Header links" [ref=f20e6]:
+        - link "Rules" [ref=f20e7] [cursor=pointer]:
+          - /url: /rules.html
+        - link "Privacy" [ref=f20e8] [cursor=pointer]:
+          - /url: /privacy.html
+        - link "Prizes" [ref=f20e9] [cursor=pointer]:
+          - /url: /prizes.html
+        - link "2026 Scoreboard" [ref=f20e10] [cursor=pointer]:
+          - /url: /scoreboard.html
+        - link "Hall of Fame" [ref=f20e11] [cursor=pointer]:
+          - /url: /hall-of-fame.html
+        - link "Challenges" [ref=f20e12] [cursor=pointer]:
+          - /url: /challenge-board.html
+        - link "Profile (hackadvisermx)" [ref=f20e13] [cursor=pointer]:
+          - /url: /profile.html
+  - main [ref=f20e14]:
+    - generic [ref=f20e16]:
+      - heading "Pointer Overflow 2026 Challenge Board" [level=1] [ref=f20e18]
+      - generic [ref=f20e19]:
+        - generic [ref=f20e20]:
+          - generic [ref=f20e21]: Category
+          - combobox "Category" [ref=f20e22]:
+            - option "All" [selected]
+        - generic [ref=f20e23]:
+          - generic [ref=f20e24]: Wave
+          - combobox "Wave" [ref=f20e25]:
+            - option "All" [selected]
+            - option "Wave 1"
+            - option "Wave 2"
+            - option "Wave 3"
+            - option "Wave 4"
+            - option "Wave 5"
+            - option "Wave 6"
+            - option "Wave 7"
+            - option "Wave 8"
+        - generic [ref=f20e26]:
+          - generic [ref=f20e27]: Status
+          - combobox "Status" [ref=f20e28]:
+            - option "All" [selected]
+            - option "Unsolved only"
+            - option "Solved only"
+  - contentinfo [ref=f20e30]:
+    - generic [ref=f20e31]:
+      - generic [ref=f20e32]: © 2026 Prof. C. R. Johnson, UW–Stevens Point • Pointer Overflow CTF
+      - navigation "Footer links" [ref=f20e33]:
+        - link "Accessibility" [ref=f20e34] [cursor=pointer]:
+          - /url: /accessibility.html
+        - link "Rules" [ref=f20e35] [cursor=pointer]:
+          - /url: /rules.html
+        - link "Privacy" [ref=f20e36] [cursor=pointer]:
+          - /url: /privacy.html
+  - button "Open accessibility settings" [ref=f20e37] [cursor=pointer]:
+    - generic [aria-hidden] [ref=f20e38]: ♿

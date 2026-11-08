@@ -1,0 +1,17 @@
+- generic [ref=e1]:
+  - generic [ref=e2]: MISC 200 · Wave 6
+  - heading "The Tower of Babel" [level=1] [ref=e3]
+  - generic [ref=e4]:
+    - paragraph [ref=e5]: Someone has gone to extraordinary lengths to make a simple message difficult to read.
+    - paragraph [ref=e6]: You've recovered a fragment of text written in a language you don't recognize, wrapped inside another language you don't recognize, wrapped inside another...
+    - paragraph [ref=e7]: Four layers. Four alphabets. One message.
+    - paragraph [ref=e8]: Start peeling.
+  - generic [ref=e9]:
+    - heading "Artifact" [level=2] [ref=e10]
+    - paragraph [ref=e11]:
+      - link "Download (per-team)" [active] [ref=e12] [cursor=pointer]:
+        - /url: babel.txt
+  - generic [ref=e13]:
+    - heading "Submit" [level=2] [ref=e14]
+    - 'textbox "POCTF{...} or raw NONCE" [ref=e15]'
+    - button "Submit" [ref=e16] [cursor=pointer]

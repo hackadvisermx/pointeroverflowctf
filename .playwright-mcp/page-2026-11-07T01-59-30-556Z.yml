@@ -1,0 +1,92 @@
+- generic [active] [ref=f21e1]:
+  - banner [ref=f21e2]:
+    - generic "POCTF" [ref=f21e3]:
+      - link [ref=f21e4] [cursor=pointer]:
+        - /url: /
+        - img "POCTF logo" [ref=f21e5]
+      - navigation "Header links" [ref=f21e6]:
+        - link "Rules" [ref=f21e7] [cursor=pointer]:
+          - /url: /rules.html
+        - link "Privacy" [ref=f21e8] [cursor=pointer]:
+          - /url: /privacy.html
+        - link "Prizes" [ref=f21e9] [cursor=pointer]:
+          - /url: /prizes.html
+        - link "2026 Scoreboard" [ref=f21e10] [cursor=pointer]:
+          - /url: /scoreboard.html
+        - link "Hall of Fame" [ref=f21e11] [cursor=pointer]:
+          - /url: /hall-of-fame.html
+        - link "Challenges" [ref=f21e12] [cursor=pointer]:
+          - /url: /challenge-board.html
+        - link "Profile (hackadvisermx)" [ref=f21e13] [cursor=pointer]:
+          - /url: /profile.html
+  - main [ref=f21e14]:
+    - generic [ref=f21e16]:
+      - generic [ref=f21e17]:
+        - generic [ref=f21e18]:
+          - link "← Back to Challenge Board" [ref=f21e19] [cursor=pointer]:
+            - /url: /challenge-board.html
+          - text: exploit5
+        - heading "What the Heap Remembers" [level=1] [ref=f21e20]
+        - paragraph [ref=f21e21]: "Briefing loaded. Status: Unsolved."
+        - generic [ref=f21e22]: "Category: Exploitation • Wave: 5 • Points: 100 • Solves: 124"
+      - separator [ref=f21e23]
+      - generic [ref=f21e24]:
+        - generic [ref=f21e25]:
+          - paragraph [ref=f21e26]: Ok, I need to come clean. I don't know what any of the below means. I woke up this evening after a late-night POCTF prep meeting and found all this garbage in the challenge text field. Problem I have is that I don't remember this challenge. I don't remember how it works. I don't remember the solution. So, here's what I have. Good luck, I guess.
+          - separator [ref=f21e27]
+          - paragraph [ref=f21e28]: I have been STARING at this binary for sixteen hours. My coffee has gone cold three times. The last time it went cold IT TASTED LIKE SOMEONE ELSE’S COFFEE. I am no longer certain the coffee is mine.
+          - paragraph [ref=f21e29]: Anyway! The binary. I made it. I’m pretty sure I made it. It holds a flag, XOR’d against a key I DEFINITELY DID NOT WRITE DOWN. The key doesn’t exist in the file. The key doesn’t exist on disk. The key EXISTS WHILE THE PROGRAM EXISTS and vanishes the moment the program stops thinking about it.
+          - paragraph [ref=f21e30]: HOWEVER. HOWEVER!! When the program is finished with a piece of memory, it hands that piece back. And when it hands that piece out again, it SWEARS to anyone who asks that it tidied up first. IT. IS. LYING. The program is lying to itself and I think — I THINK — I can prove it was lying to me too.
+          - paragraph [ref=f21e31]: Through its own command surface, in the right order, you can make it hand you a piece of memory that is still humming with the previous occupant. The key is in the humming.
+          - paragraph [ref=f21e32]: Please solve this before the coffee turns on me again.
+          - paragraph [ref=f21e33]: — Prof. J.
+          - separator [ref=f21e34]
+        - link "Open Target" [ref=f21e36] [cursor=pointer]:
+          - /url: /challenges/what-the-heap-remembers/
+        - separator [ref=f21e37]
+        - generic [ref=f21e38]:
+          - heading "Hints" [level=2] [ref=f21e39]
+          - paragraph [ref=f21e40]:
+            - text: Each hint costs
+            - strong [ref=f21e41]: "10"
+            - text: finalized points. Your team has
+            - strong [ref=f21e42]: "3983"
+            - text: finalized points to spend.
+          - generic [ref=f21e43]:
+            - generic [ref=f21e45]:
+              - generic [ref=f21e46]:
+                - strong [ref=f21e47]: Hint 1
+                - text: 10 pts
+              - button "Buy" [ref=f21e48]
+            - generic [ref=f21e50]:
+              - generic [ref=f21e51]:
+                - strong [ref=f21e52]: Hint 2
+                - text: 10 pts
+              - button "Locked" [disabled] [ref=f21e53]
+            - generic [ref=f21e55]:
+              - generic [ref=f21e56]:
+                - strong [ref=f21e57]: Hint 3
+                - text: 10 pts
+              - button "Locked" [disabled] [ref=f21e58]
+        - generic [ref=f21e60]:
+          - heading "Submit Flag" [level=2] [ref=f21e61]
+          - text: Flag
+          - textbox "Flag" [ref=f21e62]:
+            - /placeholder: "POCTF{...}"
+          - button "Submit" [ref=f21e64]
+          - paragraph [ref=f21e65]:
+            - text: Flags are of the form
+            - code [ref=f21e66]: "POCTF{...}"
+            - text: . Each flag is unique to your team!
+  - contentinfo [ref=f21e67]:
+    - generic [ref=f21e68]:
+      - generic [ref=f21e69]: © 2026 Prof. C. R. Johnson, UW–Stevens Point • Pointer Overflow CTF
+      - navigation "Footer links" [ref=f21e70]:
+        - link "Accessibility" [ref=f21e71] [cursor=pointer]:
+          - /url: /accessibility.html
+        - link "Rules" [ref=f21e72] [cursor=pointer]:
+          - /url: /rules.html
+        - link "Privacy" [ref=f21e73] [cursor=pointer]:
+          - /url: /privacy.html
+  - button "Open accessibility settings" [ref=f21e74] [cursor=pointer]:
+    - generic [aria-hidden] [ref=f21e75]: ♿

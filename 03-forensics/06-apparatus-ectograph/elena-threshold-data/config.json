@@ -1,0 +1,20 @@
+{
+  "app": "Threshold",
+  "version": "3.11.4",
+  "database_path": "./threshold.db",
+  "attachments_dir": "./attachments",
+  "user_handle": "@e.marchetti",
+  "settings": {
+    "notifications_enabled": true,
+    "read_receipts_enabled": true,
+    "disappearing_messages_default": 604800,
+    "auto_delete_media_after": null,
+    "voice_memo_auto_transcribe": true,
+    "message_backup_enabled": false,
+    "cloud_sync_enabled": false
+  },
+  "recovery": {
+    "recovery_kit_generated_at": "2025-08-14T09:12:00Z",
+    "server_url": "https://threshold-mesh.example.org"
+  }
+}

@@ -1,0 +1,59 @@
+- generic [active] [ref=f1e1]:
+  - banner [ref=f1e2]:
+    - generic "POCTF" [ref=f1e3]:
+      - link [ref=f1e4] [cursor=pointer]:
+        - /url: /
+        - img "POCTF logo" [ref=f1e5]
+      - navigation "Header links" [ref=f1e6]:
+        - link "Rules" [ref=f1e7] [cursor=pointer]:
+          - /url: /rules.html
+        - link "Privacy" [ref=f1e8] [cursor=pointer]:
+          - /url: /privacy.html
+        - link "Prizes" [ref=f1e9] [cursor=pointer]:
+          - /url: /prizes.html
+        - link "2026 Scoreboard" [ref=f1e10] [cursor=pointer]:
+          - /url: /scoreboard.html
+        - link "Hall of Fame" [ref=f1e11] [cursor=pointer]:
+          - /url: /hall-of-fame.html
+        - link "Challenges" [ref=f1e12] [cursor=pointer]:
+          - /url: /challenge-board.html
+        - link "Profile (hackadvisermx)" [ref=f1e13] [cursor=pointer]:
+          - /url: /profile.html
+  - main [ref=f1e14]:
+    - generic [ref=f1e16]:
+      - heading "Pointer Overflow 2026 Challenge Board" [level=1] [ref=f1e18]
+      - generic [ref=f1e19]:
+        - generic [ref=f1e20]:
+          - generic [ref=f1e21]: Category
+          - combobox "Category" [ref=f1e22]:
+            - option "All" [selected]
+        - generic [ref=f1e23]:
+          - generic [ref=f1e24]: Wave
+          - combobox "Wave" [ref=f1e25]:
+            - option "All" [selected]
+            - option "Wave 1"
+            - option "Wave 2"
+            - option "Wave 3"
+            - option "Wave 4"
+            - option "Wave 5"
+            - option "Wave 6"
+            - option "Wave 7"
+            - option "Wave 8"
+        - generic [ref=f1e26]:
+          - generic [ref=f1e27]: Status
+          - combobox "Status" [ref=f1e28]:
+            - option "All" [selected]
+            - option "Unsolved only"
+            - option "Solved only"
+  - contentinfo [ref=f1e30]:
+    - generic [ref=f1e31]:
+      - generic [ref=f1e32]: © 2026 Prof. C. R. Johnson, UW–Stevens Point • Pointer Overflow CTF
+      - navigation "Footer links" [ref=f1e33]:
+        - link "Accessibility" [ref=f1e34] [cursor=pointer]:
+          - /url: /accessibility.html
+        - link "Rules" [ref=f1e35] [cursor=pointer]:
+          - /url: /rules.html
+        - link "Privacy" [ref=f1e36] [cursor=pointer]:
+          - /url: /privacy.html
+  - button "Open accessibility settings" [ref=f1e37] [cursor=pointer]:
+    - generic [aria-hidden] [ref=f1e38]: ♿

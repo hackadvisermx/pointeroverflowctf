@@ -1,0 +1,22 @@
+- generic [ref=e1]:
+  - generic [ref=e2]: EXP 400 · Wave 5
+  - heading "What the Heap Remembers" [level=1] [ref=e3]
+  - generic [ref=e4]:
+    - paragraph [ref=e5]: Ok, I need to come clean. I don't know what any of the below means. I woke up this evening after a late-night POCTF prep meeting and found all this garbage in the challenge text field. Problem I have is that I don't remember this challenge. I don't remember how it works. I don't remember the solution. So, here's what I have. Good luck, I guess.
+    - separator [ref=e6]
+    - paragraph [ref=e7]: I have been STARING at this binary for sixteen hours. My coffee has gone cold three times. The last time it went cold IT TASTED LIKE SOMEONE ELSE’S COFFEE. I am no longer certain the coffee is mine.
+    - paragraph [ref=e8]: Anyway! The binary. I made it. I’m pretty sure I made it. It holds a flag, XOR’d against a key I DEFINITELY DID NOT WRITE DOWN. The key doesn’t exist in the file. The key doesn’t exist on disk. The key EXISTS WHILE THE PROGRAM EXISTS and vanishes the moment the program stops thinking about it.
+    - paragraph [ref=e9]: HOWEVER. HOWEVER!! When the program is finished with a piece of memory, it hands that piece back. And when it hands that piece out again, it SWEARS to anyone who asks that it tidied up first. IT. IS. LYING. The program is lying to itself and I think — I THINK — I can prove it was lying to me too.
+    - paragraph [ref=e10]: Through its own command surface, in the right order, you can make it hand you a piece of memory that is still humming with the previous occupant. The key is in the humming.
+    - paragraph [ref=e11]: Please solve this before the coffee turns on me again.
+    - paragraph [ref=e12]: — Prof. J.
+    - separator [ref=e13]
+  - generic [ref=e14]:
+    - heading "Artifact" [level=2] [ref=e15]
+    - paragraph [ref=e16]:
+      - link "Download (per-team)" [active] [ref=e17] [cursor=pointer]:
+        - /url: heap.zip
+  - generic [ref=e18]:
+    - heading "Submit" [level=2] [ref=e19]
+    - 'textbox "POCTF{...} or raw NONCE" [ref=e20]'
+    - button "Submit" [ref=e21] [cursor=pointer]

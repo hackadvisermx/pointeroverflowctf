@@ -1,0 +1,14 @@
+=== SEANCE.EXE TRANSMISSION FRAGMENT — UNSCHEDULED ===
+
+  Recovered as an anomalous binary blob in the same data
+  directory. No known process on the subject's system emits
+  this format. Contents are ASCII, no framing.
+
+  Message body reads:
+
+    The offering is placed and cannot be reclaimed. What is taken is taken in full.
+
+  End of fragment. No terminator, no signature. The apparatus
+  was not queried.
+
+=== END TRANSMISSION ===

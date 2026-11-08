@@ -1,0 +1,296 @@
+- generic [ref=f1e1]:
+  - banner [ref=f1e2]:
+    - generic "POCTF" [ref=f1e3]:
+      - link [ref=f1e4] [cursor=pointer]:
+        - /url: /
+        - img "POCTF logo" [ref=f1e5]
+      - navigation "Header links" [ref=f1e6]:
+        - link "Rules" [ref=f1e7] [cursor=pointer]:
+          - /url: /rules.html
+        - link "Privacy" [ref=f1e8] [cursor=pointer]:
+          - /url: /privacy.html
+        - link "Prizes" [ref=f1e9] [cursor=pointer]:
+          - /url: /prizes.html
+        - link "2026 Scoreboard" [ref=f1e10] [cursor=pointer]:
+          - /url: /scoreboard.html
+        - link "Hall of Fame" [ref=f1e11] [cursor=pointer]:
+          - /url: /hall-of-fame.html
+        - link "Challenges" [ref=f1e12] [cursor=pointer]:
+          - /url: /challenge-board.html
+        - link "Profile (hackadvisermx)" [ref=f1e13] [cursor=pointer]:
+          - /url: /profile.html
+  - main [ref=f1e14]:
+    - generic [ref=f1e16]:
+      - heading "Pointer Overflow 2026 Challenge Board" [level=1] [ref=f1e18]
+      - generic [ref=f1e19]:
+        - generic [ref=f1e20]:
+          - generic [ref=f1e21]: Category
+          - combobox "Category" [ref=f1e22]:
+            - option "All" [selected]
+            - option "Cryptography"
+            - option "Exploitation"
+            - option "Forensics"
+            - option "Game Hacking"
+            - option "Miscellaneous"
+            - option "Open-Source Intelligence"
+            - option "Reverse Engineering"
+            - option "Steganography"
+            - option "Web"
+        - generic [ref=f1e23]:
+          - generic [ref=f1e24]: Wave
+          - combobox "Wave" [ref=f1e25]:
+            - option "All" [selected]
+            - option "Wave 1"
+            - option "Wave 2"
+            - option "Wave 3"
+            - option "Wave 4"
+            - option "Wave 5"
+            - option "Wave 6"
+            - option "Wave 7"
+            - option "Wave 8"
+        - generic [ref=f1e26]:
+          - generic [ref=f1e27]: Status
+          - combobox "Status" [active] [ref=f1e28]:
+            - option "All" [selected]
+            - option "Unsolved only"
+            - option "Solved only"
+      - generic [ref=f1e29]:
+        - generic [ref=f1e39]:
+          - heading "Cryptography" [level=2] [ref=f1e41]
+          - generic [ref=f1e42]:
+            - article [ref=f1e43] [cursor=pointer]:
+              - generic [ref=f1e44]: 95 pts
+              - heading "Letters Never Sent" [level=3] [ref=f1e47]
+              - generic [ref=f1e48]: 802 solves
+            - article [ref=f1e50] [cursor=pointer]:
+              - generic [ref=f1e51]: 100 pts
+              - heading "Forty Measures Deep" [level=3] [ref=f1e54]
+              - generic [ref=f1e55]: 110 solves
+            - article [ref=f1e57] [cursor=pointer]:
+              - generic [ref=f1e58]: 125 pts
+              - heading "The Apparatus, Rapport" [level=3] [ref=f1e61]
+              - generic [ref=f1e62]: 427 solves
+            - article [ref=f1e64] [cursor=pointer]:
+              - generic [ref=f1e65]: 125 pts
+              - heading "The Consulting Room" [level=3] [ref=f1e68]
+              - generic [ref=f1e69]: 256 solves
+            - article [ref=f1e71] [cursor=pointer]:
+              - generic [ref=f1e72]: 137 pts
+              - heading "A Map of Small Things" [level=3] [ref=f1e75]
+              - generic [ref=f1e76]: 261 solves
+            - article [ref=f1e78] [cursor=pointer]:
+              - generic [ref=f1e79]: 141 pts
+              - heading "Noise Below the Signal" [level=3] [ref=f1e82]
+              - generic [ref=f1e83]: 135 solves
+        - generic [ref=f1e85]:
+          - heading "Exploitation" [level=2] [ref=f1e87]
+          - generic [ref=f1e88]:
+            - article [ref=f1e89] [cursor=pointer]:
+              - generic [ref=f1e90]: 98 pts
+              - heading "The Sandglass" [level=3] [ref=f1e93]
+              - generic [ref=f1e94]: 287 solves
+            - article [ref=f1e96] [cursor=pointer]:
+              - generic [ref=f1e97]: 100 pts
+              - heading "What the Heap Remembers" [level=3] [ref=f1e100]
+              - generic [ref=f1e101]: 126 solves
+            - article [ref=f1e103] [cursor=pointer]:
+              - generic [ref=f1e104]: 104 pts
+              - heading "Read Me My Fortune" [level=3] [ref=f1e107]
+              - generic [ref=f1e108]: 541 solves
+            - article [ref=f1e110] [cursor=pointer]:
+              - generic [ref=f1e111]: 128 pts
+              - heading "Thirty-Two Steps Down" [level=3] [ref=f1e114]
+              - generic [ref=f1e115]: 343 solves
+            - article [ref=f1e117] [cursor=pointer]:
+              - generic [ref=f1e118]: 133 pts
+              - heading "A Few Seconds Either Way" [level=3] [ref=f1e121]
+              - generic [ref=f1e122]: 201 solves
+            - article [ref=f1e124] [cursor=pointer]:
+              - generic [ref=f1e125]: 141 pts
+              - heading "The Interpreter's Margin" [level=3] [ref=f1e128]
+              - generic [ref=f1e129]: 127 solves
+        - generic [ref=f1e131]:
+          - heading "Forensics" [level=2] [ref=f1e133]
+          - generic [ref=f1e134]:
+            - article [ref=f1e135] [cursor=pointer]:
+              - generic [ref=f1e136]: 67 pts
+              - heading "Everything Left Open" [level=3] [ref=f1e139]
+              - generic [ref=f1e140]: 740 solves
+            - article [ref=f1e142] [cursor=pointer]:
+              - generic [ref=f1e143]: 100 pts
+              - heading "Archaeology of Mistakes" [level=3] [ref=f1e146]
+              - generic [ref=f1e147]: 140 solves
+            - article [ref=f1e149] [cursor=pointer]:
+              - generic [ref=f1e150]: 119 pts
+              - heading "A Cabin Worth" [level=3] [ref=f1e153]
+              - generic [ref=f1e154]: 391 solves
+            - article [ref=f1e156] [cursor=pointer]:
+              - generic [ref=f1e157]: 120 pts
+              - heading "What Goes Unwritten" [level=3] [ref=f1e160]
+              - generic [ref=f1e161]: 274 solves
+            - article [ref=f1e163] [cursor=pointer]:
+              - generic [ref=f1e164]: 137 pts
+              - heading "A Quiet Home" [level=3] [ref=f1e167]
+              - generic [ref=f1e168]: 241 solves
+            - article [ref=f1e170] [cursor=pointer]:
+              - generic [ref=f1e171]: 141 pts
+              - heading "The Apparatus, Ectograph" [level=3] [ref=f1e174]
+              - generic [ref=f1e175]: 137 solves
+        - generic [ref=f1e177]:
+          - heading "Game Hacking" [level=2] [ref=f1e179]
+          - generic [ref=f1e180]:
+            - article [ref=f1e181] [cursor=pointer]:
+              - generic [ref=f1e182]: 87 pts
+              - heading "Leap of Faith" [level=3] [ref=f1e185]
+              - generic [ref=f1e186]: 315 solves
+            - article [ref=f1e188] [cursor=pointer]:
+              - generic [ref=f1e189]: 100 pts
+              - heading "The House Always Misses" [level=3] [ref=f1e192]
+              - generic [ref=f1e193]: 101 solves
+            - article [ref=f1e195] [cursor=pointer]:
+              - generic [ref=f1e196]: 138 pts
+              - heading "Health Is a Social Construct" [level=3] [ref=f1e199]
+              - generic [ref=f1e200]: 177 solves
+        - generic [ref=f1e202]:
+          - heading "Miscellaneous" [level=2] [ref=f1e204]
+          - generic [ref=f1e205]:
+            - article [ref=f1e206] [cursor=pointer]:
+              - generic [ref=f1e207]: 101 pts
+              - heading "The Apparatus, Invocation" [level=3] [ref=f1e210]
+              - generic [ref=f1e211]: 586 solves
+            - article [ref=f1e213] [cursor=pointer]:
+              - generic [ref=f1e214]: 121 pts
+              - heading "Frequency and Consequence" [level=3] [ref=f1e217]
+              - generic [ref=f1e218]: 331 solves
+            - article [ref=f1e220] [cursor=pointer]:
+              - generic [ref=f1e221]: 127 pts
+              - heading "Columns of Holes" [level=3] [ref=f1e224]
+              - generic [ref=f1e225]: 228 solves
+            - article [ref=f1e227] [cursor=pointer]:
+              - generic [ref=f1e228]: 137 pts
+              - heading "A Peculiar Game" [level=3] [ref=f1e231]
+              - generic [ref=f1e232]: 182 solves
+            - article [ref=f1e234] [cursor=pointer]:
+              - generic [ref=f1e235]: 141 pts
+              - heading "The Tower of Babel" [level=3] [ref=f1e238]
+              - generic [ref=f1e239]: 117 solves
+            - article [ref=f1e241] [cursor=pointer]:
+              - generic [ref=f1e242]: 162 pts
+              - heading "Conditional Existence" [level=3] [ref=f1e245]
+              - generic [ref=f1e246]: 123 solves
+        - generic [ref=f1e248]:
+          - heading "Open-Source Intelligence" [level=2] [ref=f1e250]
+          - generic [ref=f1e251]:
+            - article [ref=f1e252] [cursor=pointer]:
+              - generic [ref=f1e253]: 100 pts
+              - heading "The Preserved Moment" [level=3] [ref=f1e256]
+              - generic [ref=f1e257]: 94 solves
+            - article [ref=f1e259] [cursor=pointer]:
+              - generic [ref=f1e260]: 102 pts
+              - heading "A Borrowed Name" [level=3] [ref=f1e263]
+              - generic [ref=f1e264]: 423 solves
+            - article [ref=f1e266] [cursor=pointer]:
+              - generic [ref=f1e267]: 102 pts
+              - heading "Strings Attached" [level=3] [ref=f1e270]
+              - generic [ref=f1e271]: 255 solves
+            - article [ref=f1e273] [cursor=pointer]:
+              - generic [ref=f1e274]: 123 pts
+              - heading "Where the Light Fails to Fall" [level=3] [ref=f1e277]
+              - generic [ref=f1e278]: 483 solves
+            - article [ref=f1e280] [cursor=pointer]:
+              - generic [ref=f1e281]: 137 pts
+              - heading "The Apparatus, Apport" [level=3] [ref=f1e284]
+              - generic [ref=f1e285]: 238 solves
+            - article [ref=f1e287] [cursor=pointer]:
+              - generic [ref=f1e288]: 141 pts
+              - heading "What Was Exposed" [level=3] [ref=f1e291]
+              - generic [ref=f1e292]: 75 solves
+        - generic [ref=f1e294]:
+          - heading "Reverse Engineering" [level=2] [ref=f1e296]
+          - generic [ref=f1e297]:
+            - article [ref=f1e298] [cursor=pointer]:
+              - generic [ref=f1e299]: 112 pts
+              - heading "Panoptican" [level=3] [ref=f1e302]
+              - generic [ref=f1e303]: 282 solves
+            - article [ref=f1e305] [cursor=pointer]:
+              - generic [ref=f1e306]: 118 pts
+              - heading "The Disassembled Mind" [level=3] [ref=f1e309]
+              - generic [ref=f1e310]: 365 solves
+            - article [ref=f1e312] [cursor=pointer]:
+              - generic [ref=f1e313]: 122 pts
+              - heading "Excavation" [level=3] [ref=f1e316]
+              - generic [ref=f1e317]: 426 solves
+            - article [ref=f1e319] [cursor=pointer]:
+              - generic [ref=f1e320]: 132 pts
+              - heading "An Invented Language" [level=3] [ref=f1e323]
+              - generic [ref=f1e324]: 215 solves
+            - article [ref=f1e326] [cursor=pointer]:
+              - generic [ref=f1e327]: 145 pts
+              - heading "The Oxidized Archive" [level=3] [ref=f1e330]
+              - generic [ref=f1e331]: 119 solves
+        - generic [ref=f1e333]:
+          - heading "Steganography" [level=2] [ref=f1e335]
+          - generic [ref=f1e336]:
+            - article [ref=f1e337] [cursor=pointer]:
+              - generic [ref=f1e338]: 100 pts
+              - heading "The Hidden Path" [level=3] [ref=f1e341]
+              - generic [ref=f1e342]: 118 solves
+            - article [ref=f1e344] [cursor=pointer]:
+              - generic [ref=f1e345]: 113 pts
+              - heading "Invisible Ink" [level=3] [ref=f1e348]
+              - generic [ref=f1e349]: 547 solves
+            - article [ref=f1e351] [cursor=pointer]:
+              - generic [ref=f1e352]: 120 pts
+              - heading "The Apparatus, The Rapping" [level=3] [ref=f1e355]
+              - generic [ref=f1e356]: 274 solves
+            - article [ref=f1e358] [cursor=pointer]:
+              - generic [ref=f1e359]: 128 pts
+              - heading "Commit to Memory" [level=3] [ref=f1e362]
+              - generic [ref=f1e363]: 341 solves
+            - article [ref=f1e365] [cursor=pointer]:
+              - generic [ref=f1e366]: 137 pts
+              - heading "Velocity" [level=3] [ref=f1e369]
+              - generic [ref=f1e370]: 221 solves
+            - article [ref=f1e372] [cursor=pointer]:
+              - generic [ref=f1e373]: 141 pts
+              - heading "The Wrong Channel" [level=3] [ref=f1e376]
+              - generic [ref=f1e377]: 119 solves
+        - generic [ref=f1e379]:
+          - heading "Web" [level=2] [ref=f1e381]
+          - generic [ref=f1e382]:
+            - article [ref=f1e383] [cursor=pointer]:
+              - generic [ref=f1e384]: 95 pts
+              - heading "Poisoned Well" [level=3] [ref=f1e387]
+              - generic [ref=f1e388]: 502 solves
+            - article [ref=f1e390] [cursor=pointer]:
+              - generic [ref=f1e391]: 97 pts
+              - heading "The Shape of a Query" [level=3] [ref=f1e394]
+              - generic [ref=f1e395]: 694 solves
+            - article [ref=f1e397] [cursor=pointer]:
+              - generic [ref=f1e398]: 100 pts
+              - heading "The Apparatus, Levitation" [level=3] [ref=f1e401]
+              - generic [ref=f1e402]: 115 solves
+            - article [ref=f1e404] [cursor=pointer]:
+              - generic [ref=f1e405]: 109 pts
+              - heading "No Structure Required" [level=3] [ref=f1e408]
+              - generic [ref=f1e409]: 288 solves
+            - article [ref=f1e411] [cursor=pointer]:
+              - generic [ref=f1e412]: 137 pts
+              - heading "The Logic Inside" [level=3] [ref=f1e415]
+              - generic [ref=f1e416]: 213 solves
+            - article [ref=f1e418] [cursor=pointer]:
+              - generic [ref=f1e419]: 141 pts
+              - heading "The Interior Route" [level=3] [ref=f1e422]
+              - generic [ref=f1e423]: 99 solves
+  - contentinfo [ref=f1e30]:
+    - generic [ref=f1e31]:
+      - generic [ref=f1e32]: © 2026 Prof. C. R. Johnson, UW–Stevens Point • Pointer Overflow CTF
+      - navigation "Footer links" [ref=f1e33]:
+        - link "Accessibility" [ref=f1e34] [cursor=pointer]:
+          - /url: /accessibility.html
+        - link "Rules" [ref=f1e35] [cursor=pointer]:
+          - /url: /rules.html
+        - link "Privacy" [ref=f1e36] [cursor=pointer]:
+          - /url: /privacy.html
+  - button "Open accessibility settings" [ref=f1e37] [cursor=pointer]:
+    - generic [aria-hidden] [ref=f1e38]: ♿
